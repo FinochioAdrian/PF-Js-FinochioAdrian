@@ -1,0 +1,306 @@
+/*  Index.html */
+/*  paleta 
+  F9F5F6 Fondo claro
+  F8E8EE Fondo mas oscuro
+  FDCEDF   => trans=> fccfdfa1
+  #F2BED1 Acento
+https://colorhunt.co/palette/f9f5f6f8e8eefdcedff2bed1
+   rgba(214, 154, 244, 0.55) => d69af48c
+
+   font-family: 'Mate SC', serif;
+   */
+.red {
+  background-color: red;
+}
+.green {
+  background-color: green;
+}
+.yellow {
+  background-color: yellow;
+}
+body {
+  background-color: #f9f5f6;
+}
+
+/* Header */
+header {
+  width: 100%;
+  height: 16%;
+  background-color: #fccfdfa1;
+  border-bottom: #fdcedf 3px solid;
+  box-shadow: 0 2px 10px rgba(253, 206, 223, 0.658);
+}
+.logo {
+  width: 10%;
+  height: 50%;
+  margin: 1% 1%;
+  float: left;
+  border: black 1px solid;
+}
+
+.header_buscador {
+  float: left;
+  width: 40%;
+  height: 50%;
+  margin: 1.75% 2%;
+}
+
+#input_search {
+  display: inline-block;
+  width: 75%;
+}
+
+nav {
+  float: right;
+  width: 40%;
+  height: 70%;
+  margin-top: 1.75%;
+
+  margin-left: auto;
+  margin-right: auto;
+}
+
+nav ul {
+  list-style: none;
+  width: 100%;
+  height: 100%;
+}
+
+.li_nav {
+  float: left;
+  margin-left: 2%;
+  border: #f2bed1 2px solid;
+  border-radius: 10px;
+  padding-left: 2%;
+  padding-right: 2%;
+}
+.li_nav > a {
+  text-decoration: none;
+}
+.li_nav:hover {
+  text-decoration: none;
+  background-color: #d69af48c;
+  border: #d69af48c 2px solid;
+}
+.li_nav > a:hover {
+  color: rgb(125, 20, 216);
+}
+
+/* /Header */
+
+/* Main */
+
+.title {
+  display: inline-block;
+  width: 100%;
+  height: 3rem;
+  text-align: center;
+  font-size: 3rem;
+  font-family: "Mate SC", serif;
+  margin: 1% auto;
+}
+
+.banner {
+  width: 100%;
+  height: 20rem;
+  background: linear-gradient(to right, #f8bfd0, #f8b6c2);
+}
+.banner img {
+  width: 100%;
+  height: 100%;
+  object-fit: scale-down;
+}
+
+.navegador_index {
+  display: inline-block;
+  width: 100%;
+  height: 20%;
+}
+
+.navegador_index-hijo {
+  width: 35%;
+  height: 50%;
+  margin-left: auto;
+  margin-right: auto;
+  margin-top: 1.7rem;
+}
+
+.navegador_index-hijo > a {
+  margin: 1% 1% 2% 1.5%;
+}
+
+.boton {
+  display: inline-block;
+  padding: 15px 25px;
+  border: 1px solid black;
+  background-color: #f8e8ee;
+  border-radius: 4px;
+  text-decoration: none;
+  text-align: center;
+  box-shadow: 1px 2px rgb(104, 100, 100);
+}
+.boton:hover {
+  background-color: rgba(214, 154, 244, 0.55);
+}
+
+/* .boton:active{
+  color: #000;
+} */
+#Novedades {
+  width: 100%;
+  /* background-color: cornflowerblue; */
+  height: 75%;
+  padding-top: 1%;
+
+  background-color: #f8e8ee6b;
+  box-shadow: 0px -5px 10px #f8e8ee;
+}
+
+h2 {
+  font-family: "Mate SC", serif;
+  font-size: 2.2rem;
+  font-weight: 700;
+}
+h3 {
+  font-family: "Mate SC", serif;
+  font-size: 1.5rem;
+}
+
+.container-cards {
+  width: 80%;
+  height: auto;
+  margin: 1.5rem auto 1.5rem auto;
+  /* background-color: #e49d45; */
+}
+
+.card {
+  display: inline-block;
+  width: 25%;
+  height: 70%;
+  margin: 0 2% 2% 2%;
+  border: 1.2px solid black;
+  border-radius: 10px;
+  background-color: #f9f5f6;
+  box-shadow: 5px 5px 20px rgb(104, 100, 100);
+}
+
+.card:first-child {
+  margin: 0% 2% 2% 4%;
+}
+.card-title {
+  text-align: center;
+}
+.card-body {
+  width: 90%;
+  height: 80%;
+  max-height: 85%;
+  margin: 1% auto;
+  border: #d69af4b4 solid 3px;
+
+  /* background-color: aquamarine; */
+}
+.card-body img {
+  width: 100%;
+  height: 100%;
+  border-radius: inherit;
+  object-fit: cover;
+}
+
+.card-footer a {
+  margin: 0 1rem;
+  text-decoration: none;
+}
+
+.redonder-s-d {
+  border-start-end-radius: 50px;
+}
+.redonder-i-i {
+  border-end-start-radius: 50px;
+}
+#OfertasUnicas {
+  width: 100%;
+  /* background-color: rgb(237, 100, 141); */
+  height: 75%;
+  padding-top: 1%;
+  box-shadow: 0px -5px 10px #f8e8ee;
+}
+
+.text-Center {
+  text-align: center;
+}
+
+/*-------------------- /Main-----------------*/
+
+/* -----------------Footer------------------ */
+
+footer {
+  width: 100%;
+  height: 55%;
+  margin-top: 1rem;
+  background-color: #7c7377;
+  box-shadow: 0 -10px 20px #7c7377;
+  color: #f9f5f6;
+  text-align: center;
+}
+
+.info-footer {
+  width: 100%;
+  height: 16rem;
+}
+.col-footer {
+  width: 30%;
+  height: 100%;
+  display: inline-block;
+}
+.col-footer:nth-child(1) {
+  float: left;
+}
+
+.col-footer:nth-child(3) {
+  float: right;
+}
+
+.icon img {
+  display: inline-block;
+  margin: 5px 5px;
+ width: 3rem;
+  height: 3rem;
+}
+
+/* ---------------------Nosotros.html------------------------ */
+.container-nosotros {
+  width: 100%;
+  height: 65%;
+  background-color: #f8e8ee;
+
+}
+.nosotros {
+  width: 90%;
+  height: 100%;
+  margin: 1rem auto;
+}
+
+.img-nostros{
+  box-sizing: border-box;
+  width: 30%;
+  height: 100%;
+  float: left;
+  background-image: url(../img/nosotros/fachada.jpg);
+  background-size: cover;
+  border: #7c7377 solid 2px;
+}
+.info-nosotros {
+  width: 70%;
+  height: 100%;
+  float: left;
+
+}
+.info-nosotros p {
+  width: 80%;
+font-family: Georgia, 'Times New Roman', Times, serif;
+margin: 15% auto;
+font-size: 25px;
+padding: 10px;
+border: #7c7377 solid 1px;
+border-radius: 5px;
+}
