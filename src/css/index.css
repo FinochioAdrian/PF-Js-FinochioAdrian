@@ -68,6 +68,23 @@ header {
   background-color: var(--color-button-hover);
   border-radius: 20px;
   border: var(--color-button-hover) 3px solid;
+  scale: 115%;
+  box-shadow: 0px 0px 10px grey;
+
+}
+
+.btn_form_search {
+  background-color: transparent;
+  border: var(--color-button-hover) solid 4px;
+}
+
+.btn_form_search:hover {
+  
+  background-color: var(--color-button-hover);
+  border-radius: 20px;
+  border: var(--color-button-hover) 3px solid;
+  font-size:large;
+
 }
 /* /Header */
 
@@ -101,17 +118,20 @@ header {
   border-radius: 4px;
   text-decoration: none;
   text-align: center;
-  box-shadow: 1px 2px rgb(104, 100, 100);
+  box-shadow: 1px 2px rgb(104, 100, 100) ;
 
 }
 
 .boton:hover {
   background-color: rgba(214, 154, 244, 0.55);
+  box-shadow: 10px 10px 8px rgb(141, 132, 132);
+
+  scale:120%;
 }
 
 
 #Novedades {
-  height: 75%;
+  
   padding-top: 1%;
 
   background-color: #f8e8ee6b;
@@ -128,9 +148,26 @@ h3 {
   font-size: 1.5rem;
 }
 
+.card_img-size{
+  padding: 1rem;
+}
+.card_img-size img{
+  height: 400px ;
+
+  object-fit: contain;
+  
+}
+
+.card {
+  border: 1.2px solid black;
+  border-radius: 10px;
+  background-color: #f9f5f6;
+  box-shadow: 5px 5px 20px rgb(104, 100, 100) !important;
+}
+
+
 #OfertasUnicas {
   /* background-color: rgb(237, 100, 141); */
-  height: 75%;
   padding-top: 1%;
   box-shadow: 0px -5px 10px var(--color-shadow-secundario);
 }
