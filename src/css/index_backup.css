@@ -60,7 +60,7 @@ header {
   display: block;
   width: 75px;
   height: 75px;
-  margin: 1% 1%;
+  margin: 1% auto;
   border: black 1px solid;
 }
 
@@ -130,11 +130,16 @@ header {
 }
 
 
-#Novedades {
-  
-  padding-top: 1%;
+.nav-index {
+  margin-top: 4rem;
+  margin-bottom: 4rem;
+}
 
-  background-color: #f8e8ee6b;
+
+#Novedades {
+  margin-top: 4rem;
+  margin-bottom: 4rem;
+  background-color: var(--color-secundario);
   box-shadow: 0px -5px 10px var(--color-shadow-secundario);
 }
 
@@ -159,7 +164,7 @@ h3 {
 }
 
 .card {
-  border: 1.2px solid black;
+  border: 1.2px solid #ac6f6f;
   border-radius: 10px;
   background-color: #f9f5f6;
   box-shadow: 5px 5px 20px rgb(104, 100, 100) !important;
@@ -185,3 +190,8 @@ h3 {
   background-position: center;
 }
 
+
+.my-10 {
+  margin-top: 6rem;
+  margin-bottom: 6rem;
+}
