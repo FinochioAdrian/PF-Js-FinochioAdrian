@@ -1,0 +1,15 @@
+.card_img-size{
+    padding: 1rem;
+  }
+  .card_img-size img{
+    height: 400px ;
+  
+    object-fit: contain;
+  }
+  
+  .card {
+    border: 1.2px solid $color-card-border;
+    border-radius: 10px;
+    background-color: $color-bg-card;
+    box-shadow: 5px 5px 20px $color-shadow-terciario !important;
+  }

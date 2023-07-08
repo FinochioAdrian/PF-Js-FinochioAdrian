@@ -1,0 +1,38 @@
+/* Header */
+header {
+    border-bottom: $color-border-principal 3px solid;
+    box-shadow: 0 2px 10px $color-shadow-principal;
+  }
+  
+  .logo {
+    display: block;
+    width: 75px;
+    height: 75px;
+    margin: 1% auto;
+    border: grey 1px solid;
+  }
+  
+  .nav-item:hover {
+    background-color: $color-button-hover;
+    border-radius: 20px;
+    border: $color-button-hover 3px solid;
+    scale: 115%;
+    box-shadow: 0px 0px 10px grey;
+  
+  }
+  
+  .btn_form_search {
+    background-color: transparent;
+    border: $color-button-hover solid 4px;
+    &:hover {
+    
+        background-color: $color-button-hover;
+        border-radius: 20px;
+        border: $color-button-hover 3px solid;
+        font-size:large;
+      
+      }
+  }
+  
+  
+  /* /Header */

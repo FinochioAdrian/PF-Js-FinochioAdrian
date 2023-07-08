@@ -1,59 +1,44 @@
-/*  Index.html */
-/*  paleta 
-  F9F5F6 Fondo claro
-  F8E8EE Fondo mas oscuro
-  FDCEDF   => trans=> fccfdfa1
-  #F2BED1 Acento
-https://colorhunt.co/palette/f9f5f6f8e8eefdcedff2bed1
-   rgba(214, 154, 244, 0.55) => d69af48c
+/* Colores */
+/* Fuentes */
+.bg-principal {
+  background-color: rgba(252, 207, 223, 0.631372549);
+}
 
-   font-family: 'Mate SC', serif;
-   */
+.bg-secundario {
+  background-color: rgba(248, 232, 238, 0.4196078431);
+}
 
-:root {
-  --color-principal: #fccfdfa1;
-  --color-border-principal: #fdcedf;
-  --color-shadow-principal: rgba(253, 206, 223, 0.658);
-  --color-body:#f9f5f6;
-  --color-secundario:#f8e8ee6b ;
-  --color-shadow-secundario:#f8e8ee;
-
-  --color-acento: #d69af48c;
-  --color-font-acento: blue;
-  --color-button-hover:#d69af48c;
-
-  
-  
-
-
-  --font-principal:"Mate SC", serif;
-
+.bg-acento {
+  background-color: rgba(214, 154, 244, 0.5490196078);
 }
 
 .font-color-acento {
-  color: var(--color-font-acento) !important;
+  color: blue !important;
 }
-.bg-principal {
-  background-color: var(--color-principal);
-}
-.bg-secundario {
-  background-color: var(--color-secundario);
-}
-.bg-acento {
-  background-color: var(--color-acento);
-}
+
 .font-principal {
-  font-family: var(--font-principal);
+  font-family: "Mate SC", serif;
+}
+
+h2 {
+  font-family: "Mate SC", serif;
+  font-size: 2.2rem;
+  font-weight: 700;
+}
+
+h3 {
+  font-family: "Mate SC", serif;
+  font-size: 1.5rem;
 }
 
 body {
-  background-color: var(--color-body) !important;
+  background-color: #f9f5f6 !important;
 }
 
 /* Header */
 header {
-  border-bottom: var(--color-border-principal) 3px solid;
-  box-shadow: 0 2px 10px var(--color-shadow-principal);
+  border-bottom: #fdcedf 3px solid;
+  box-shadow: 0 2px 10px rgba(253, 206, 223, 0.658);
 }
 
 .logo {
@@ -61,43 +46,54 @@ header {
   width: 75px;
   height: 75px;
   margin: 1% auto;
-  border: black 1px solid;
+  border: grey 1px solid;
 }
 
 .nav-item:hover {
-  background-color: var(--color-button-hover);
+  background-color: rgba(214, 154, 244, 0.5490196078);
   border-radius: 20px;
-  border: var(--color-button-hover) 3px solid;
+  border: rgba(214, 154, 244, 0.5490196078) 3px solid;
   scale: 115%;
   box-shadow: 0px 0px 10px grey;
-
 }
 
 .btn_form_search {
   background-color: transparent;
-  border: var(--color-button-hover) solid 4px;
+  border: rgba(214, 154, 244, 0.5490196078) solid 4px;
 }
-
 .btn_form_search:hover {
-  
-  background-color: var(--color-button-hover);
+  background-color: rgba(214, 154, 244, 0.5490196078);
   border-radius: 20px;
-  border: var(--color-button-hover) 3px solid;
-  font-size:large;
-
+  border: rgba(214, 154, 244, 0.5490196078) 3px solid;
+  font-size: large;
 }
+
 /* /Header */
-
-/* Main */
-
 .title {
   display: inline-block;
   width: 100%;
   height: 3rem;
   text-align: center;
   font-size: 3rem;
-  font-family:var(--font-principal);
+  font-family: "Mate SC", serif;
   margin: 1% auto;
+}
+
+/* Page Nosotros */
+.container-img-heigth {
+  height: 400px;
+  object-fit: scale-down;
+  padding: 1rem;
+  background-image: url(../img/nosotros/fachada.jpg);
+  border-start-start-radius: 10px;
+  border-bottom-left-radius: 10px;
+  background-size: cover;
+  background-position: center;
+}
+
+.my-10 {
+  margin-top: 6rem;
+  margin-bottom: 6rem;
 }
 
 .banner {
@@ -118,49 +114,26 @@ header {
   border-radius: 4px;
   text-decoration: none;
   text-align: center;
-  box-shadow: 1px 2px rgb(104, 100, 100) ;
-
+  box-shadow: 1px 2px rgb(104, 100, 100);
 }
-
 .boton:hover {
   background-color: rgba(214, 154, 244, 0.55);
   box-shadow: 10px 10px 8px rgb(141, 132, 132);
-
-  scale:120%;
+  scale: 120%;
 }
-
 
 .nav-index {
   margin-top: 4rem;
   margin-bottom: 4rem;
 }
 
-
-#Novedades {
-  margin-top: 4rem;
-  margin-bottom: 4rem;
-  background-color: var(--color-secundario);
-  box-shadow: 0px -5px 10px var(--color-shadow-secundario);
-}
-
-h2 {
-  font-family: "Mate SC", serif;
-  font-size: 2.2rem;
-  font-weight: 700;
-}
-h3 {
-  font-family: "Mate SC", serif;
-  font-size: 1.5rem;
-}
-
-.card_img-size{
+.card_img-size {
   padding: 1rem;
 }
-.card_img-size img{
-  height: 400px ;
 
+.card_img-size img {
+  height: 400px;
   object-fit: contain;
-  
 }
 
 .card {
@@ -170,28 +143,20 @@ h3 {
   box-shadow: 5px 5px 20px rgb(104, 100, 100) !important;
 }
 
-
-#OfertasUnicas {
-  /* background-color: rgb(237, 100, 141); */
-  padding-top: 1%;
-  box-shadow: 0px -5px 10px var(--color-shadow-secundario);
-}
-
-/* Nosotros.html */
-/*-------------------- /Main-----------------*/
-.container-img-heigth {
-  height: 400px;
-  object-fit: scale-down;
+.card_img-size {
   padding: 1rem;
-  background-image: url(../img/nosotros/fachada.jpg);
-  border-start-start-radius:10px;
-  border-bottom-left-radius:10px;
-  background-size: cover;
-  background-position: center;
 }
 
-
-.my-10 {
-  margin-top: 6rem;
-  margin-bottom: 6rem;
+.card_img-size img {
+  height: 400px;
+  object-fit: contain;
 }
+
+.card {
+  border: 1.2px solid #ac6f6f;
+  border-radius: 10px;
+  background-color: #f9f5f6;
+  box-shadow: 5px 5px 20px rgb(104, 100, 100) !important;
+}
+
+/*# sourceMappingURL=style.css.map */
