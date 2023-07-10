@@ -17,7 +17,7 @@
 
     <link rel="stylesheet" href="./src/css/style.css" />
 
-    <title>Abiti Usati: Tu Destino de Moda Sostenible - Nosotros</title>
+    <title>Abiti Usati: Tu Destino de Moda Sostenible - Contacto</title>
     <meta
       name="description"
       content="Somos una tienda local con la misión de dar una segunda oportunidad a las prendas usadas en buen estado. Conviértete en parte de nuestra comunidad y descubre una amplia selección de moda sostenible a precios asequibles. Explora nuestra tienda en línea y únete a nosotros en la búsqueda de la moda consciente y la sostenibilidad."
@@ -38,7 +38,7 @@
     />
     <meta
       property="og:url"
-      content="https://abitiusati.netlify.app/nosotros.html"
+      content="https://abitiusati.netlify.app/contacto.html"
     />
     <meta
       property="og:image"
@@ -138,28 +138,66 @@
       <section class="container-fluid my-10">
         <div class="card my-3 mx-md-5">
           <div class="row g-0">
-            <div class="col-md-4 container-img-heigth"></div>
-            <div class="col-md-8">
+            <div class="col-md-6 p-2">
+             
+            <iframe src="https://www.google.com/maps/embed?pb=!1m14!1m12!1m3!1d907.2689501615893!2d-70.60897027881582!3d-38.06809815147257!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!5e0!3m2!1ses!2sar!4v1688967313540!5m2!1ses!2sar" width="550" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+            </div>
+            <div class="col-md-6">
               <div class="card-body">
-                <div class="col my-md-5 ms-md-3">
-                  <h2 class="card-title font-principal text-center">
-                    Feria Americana Abiti Usati
-                  </h2>
-                  <p class="card-text text-center">
-                    "En Abiti Usati, damos una segunda oportunidad a las prendas
-                    usadas en buen estado. Nuestra misión es ofrecer moda
-                    consciente y sostenible, con ropa de calidad a precios
-                    asequibles. Apoyamos la economía familiar y seleccionamos
-                    cuidadosamente cada prenda para asegurar altos
-                    estándares.<br />
+                <form method="" class="mb-3 form-floating">
+                  <fieldset>
+                    <legend class="mb-4">Ponte en contacto con nosotros</legend>
 
-                    Formamos parte de la solución al desperdicio textil,
-                    contribuyendo a un consumo responsable. Nuestro equipo
-                    amable y profesional está aquí para ayudarte a encontrar ese
-                    tesoro único que refleje tu estilo personal. Únete a nuestra
-                    comunidad y descubre la emoción de la moda con propósito.".
-                  </p>
-                </div>
+                    <div class="mb-3 form-floating">
+                      <input required
+                        type="text"
+                        class="form-control"
+                        id="form-name"
+                        placeholder="Nombre"
+                      />
+                      <label for="form-name" class="form-label">Nombre</label>
+                    </div>
+
+                    <div class="mb-3 form-floating">
+                      <input required
+                        type="text"
+                        class="form-control"
+                        id="apellido"
+                        placeholder="Apellido"
+                      />
+                      <label for="apellido" class="form-label">Apellido</label>
+                    </div>
+
+                    <div class="mb-3 form-floating">
+                      <input required
+                        type="email"
+                        class="form-control"
+                        id="form-email"
+                        aria-describedby="emailHelp"
+                        placeholder="email"
+                      />
+                      <label for="form-email" class="form-label"
+                        >Correo electrónico</label
+                      >
+                      <div id="emailHelp" class="form-text">
+                        Nunca compartiremos su correo electrónico con nadie más.
+                      </div>
+                    </div>
+                    <div class="mb-3 form-floating">
+                      <textarea required
+                        class="form-control"
+                        placeholder="Deja tu cometario aquí"
+                        id="floatingTextarea"
+                      ></textarea
+                      ><label for="floatingTextarea"
+                        >Deja tu Mensaje aquí....</label
+                      >
+                    </div>
+                  </fieldset>
+                  <div class="col-12">
+                    <button class="btn btn-info" type="submit">Enviar formulario</button>
+                  </div>
+                </form>
               </div>
             </div>
           </div>
