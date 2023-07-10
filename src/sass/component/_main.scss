@@ -1,10 +1,12 @@
 .title {
     display: inline-block;
     width: 100%;
-    height: 3rem;
+    
     text-align: center;
     font-size: 3rem;
+    text-shadow: 10px -3px  $color-principal;
     font-family:$font-principal;
+    font-weight: bold;
     margin: 1% auto;
   }
 
@@ -29,5 +31,5 @@
 @import "./banner";
 @import "./main_button--nav";
 @import "./tarjetas";
-@import "./tarjetas";
+
 

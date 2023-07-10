@@ -17,8 +17,17 @@
 
     <link rel="stylesheet" href="./src/css/style.css" />
 
-    <title>AbitiUsati</title>
+    <title>Abiti Usati: Tu Destino de Moda Sostenible - Index</title>
+    <meta name="description" content="Descubre en Abiti Usati una amplia selección de prendas de moda sostenible y encuentra tesoros únicos a precios asequibles. Conviértete en parte de nuestra comunidad y disfruta de la segunda vida de la moda. Explora nuestra tienda online y descubre cómo el estilo y la sostenibilidad van de la mano.">
+    <meta name="keywords" content="moda sostenible, prendas usadas, tesoros únicos, precios asequibles, segunda vida de la moda, comunidad, estilo, sostenibilidad, Ropa usada Loncopué, Compra ropa usada, Venta de ropa de segunda mano, Tienda de ropa usada en Loncopué, Moda sostenible Loncopué, Ropa de calidad usada, Tienda de ropa vintage Loncopué, Prendas de vestir usadas en buen estado, Ropa de marca usada, Descuentos en ropa usada, Moda asequible en Loncopué, Ropa usada para hombres, mujeres y niños, Tienda online de ropa de segunda mano, Ropa de temporada usada, Estilo único con ropa usada">
     
+      <!-- Etiquetas Open Graph -->
+  <meta property="og:title" content="Abiti Usati: Tu Destino de Moda Sostenible - Index">
+  <meta property="og:description" content="Descubre en Abiti Usati una amplia selección de prendas de moda sostenible y encuentra tesoros únicos a precios asequibles. Conviértete en parte de nuestra comunidad y disfruta de la segunda vida de la moda. Explora nuestra tienda online y descubre cómo el estilo y la sostenibilidad van de la mano.">
+  <meta property="og:url" content="https://abitiusati.netlify.app/">
+  <meta property="og:image" content="https://abitiusati.netlify.app/src/img/logo/Logo_AbitiUsati.png">
+  <meta property="og:type" content="website">
+  <meta property="og:site_name" content="Abiti Usati">
   </head>
   <body>
     <header class="bg-principal">
@@ -43,16 +52,16 @@
             /></a>
 
             <!-- Formulario de Busqueda -->
-            <div class="input-group-sm me-auto ms-3">
+            <div class="input-group-sm me-auto ms-3 w-100">
               <form class="d-flex mx-auto" role="search">
                 <input
-                  class="form-control me-1"
+                  class="form-control me-1 w-75"
                   type="search"
-                  placeholder="Buscar"
+                  placeholder="Calzado, Remera, Pantalon ...."
                   aria-label="Buscar"
                 />
                 <button
-                  class="btn btn_form_search font-principal fw-bolder w-75"
+                  class="btn btn_form_search font-principal ms-1  "
                   type="submit"
                 >
                   Buscar
@@ -106,14 +115,31 @@
       <div class="container-fluid" id="title-head">
         <h1 class="text-center title">Feria Americana Abiti Usati</h1>
       </div>
-
-      <div class="container-fluid banner" id="banner">
-        <img
-          class="img-fluid"
-          src="./src/img/banner/Banner1.jpg"
-          alt="Imagen Banner"
-        />
+      <div id="carouselExampleInterval" class="carousel slide" data-bs-ride="carousel">
+        <div class="carousel-indicators">
+          <button type="button" data-bs-target="#carouselExampleInterval" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
+          <button type="button" data-bs-target="#carouselExampleInterval" data-bs-slide-to="1" aria-label="Slide 2"></button>
+          
+        </div>
+        <div class="carousel-inner">
+          <div class="carousel-item active banner bg-banner1" data-bs-interval="5000">
+            <img src="./src/img/banner/Banner1.jpg" class="d-block" alt="Imagen Banner 1">
+          </div>
+          <div class="carousel-item banner bg-banner2" data-bs-interval="2000">
+            <img src="./src/img/banner/Banner2.jpg" class="d-block" alt="Imagen Banner 2">
+          </div>
+          
+        </div>
+        <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleInterval" data-bs-slide="prev">
+          <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+          <span class="visually-hidden">Anterior</span>
+        </button>
+        <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleInterval" data-bs-slide="next">
+          <span class="carousel-control-next-icon" aria-hidden="true"></span>
+          <span class="visually-hidden">Siguiente</span>
+        </button>
       </div>
+     
 
       <div class="container-fluid nav-index " id="nav-index">
         <div class="row justify-content-evenly">
@@ -144,7 +170,7 @@
           <div class="container">
             <div class="row row-cols-1 row-cols-sm-2 row-cols-md-3 g-3">
               <!-- Tarjeta 1 -->
-              <div class="col">
+              <div class="col card-scale">
                 <div class="card shadow-sm">
                   <h3 class="card-title font-principal text-center fw-bolder">
                     Calzado
@@ -165,7 +191,7 @@
                       <div class="btn-group w-100">
                         <a
                           type="button"
-                          class="btn btn-sm btn-outline-secondary"
+                          class="btn btn-sm btn-outline-acento"
                         >
                           Ver
                         </a>
@@ -176,7 +202,7 @@
               </div>
               <!-- Tarjeta 2 -->
 
-              <div class="col">
+              <div class="col card-scale">
                 <div class="card shadow-sm">
                   <h3 class="card-title font-principal text-center fw-bolder">
                     Mochila
@@ -196,7 +222,7 @@
                       <div class="btn-group w-100">
                         <a
                           type="button"
-                          class="btn btn-sm btn-outline-secondary"
+                          class="btn btn-sm btn-outline-acento"
                         >
                           Ver
                         </a>
@@ -207,7 +233,7 @@
               </div>
               <!-- Tarjeta 3 -->
 
-              <div class="col">
+              <div class="col card-scale">
                 <div class="card shadow-sm">
                   <h3 class="card-title font-principal text-center fw-bolder">
                     Ropa Iterior
@@ -228,7 +254,7 @@
                       <div class="btn-group w-100">
                         <a
                           type="button"
-                          class="btn btn-sm btn-outline-secondary"
+                          class="btn btn-sm btn-outline-acento"
                         >
                           Ver
                         </a>
@@ -248,7 +274,7 @@
           <div class="container">
             <div class="row row-cols-1 row-cols-sm-2 row-cols-md-3 g-3">
               <!-- Tarjeta 1 -->
-              <div class="col">
+              <div class="col card-scale">
                 <div class="card shadow-sm">
                   <h3 class="card-title font-principal text-center fw-bolder">
                     Calzado
@@ -257,7 +283,7 @@
                   <div class="card_img-size">
                     <img
                       class="card-img-top"
-                      src="./src/img/ofertas unicas/ofertas Unicas 1.jpg"
+                      src="./src/img/ofertas unicas/ofertas_Unicas_1.jpg"
                       alt=""
                     />
                   </div>
@@ -269,7 +295,7 @@
                       <div class="btn-group w-100">
                         <a
                           type="button"
-                          class="btn btn-sm btn-outline-secondary"
+                          class="btn btn-sm btn-outline-acento"
                         >
                           Ver
                         </a>
@@ -280,7 +306,7 @@
               </div>
               <!-- Tarjeta 2 -->
 
-              <div class="col">
+              <div class="col card-scale">
                 <div class="card shadow-sm">
                   <h3 class="card-title font-principal text-center fw-bolder">
                     Calzado
@@ -288,7 +314,7 @@
                   <div class="card_img-size">
                     <img
                       class="card-img-top"
-                      src="./src/img/ofertas unicas/ofertas Unicas 2.jpg"
+                      src="./src/img/ofertas unicas/ofertas_Unicas_2.jpg"
                       alt=""
                     />
                   </div>
@@ -300,7 +326,7 @@
                       <div class="btn-group w-100">
                         <a
                           type="button"
-                          class="btn btn-sm btn-outline-secondary"
+                          class="btn btn-sm btn-outline-acento"
                         >
                           Ver
                         </a>
@@ -311,7 +337,7 @@
               </div>
               <!-- Tarjeta 3 -->
 
-              <div class="col">
+              <div class="col card-scale">
                 <div class="card shadow-sm">
                   <h3 class="card-title font-principal text-center fw-bolder">
                     Calzado
@@ -320,7 +346,7 @@
                   <div class="card_img-size">
                     <img
                       class="card-img-top"
-                      src="./src/img/ofertas unicas/ofertas Unicas 3.jpg"
+                      src="./src/img/ofertas unicas/ofertas_Unicas_3.jpg"
                       alt=""
                     />
                   </div>
@@ -332,7 +358,7 @@
                       <div class="btn-group w-100">
                         <a
                           type="button"
-                          class="btn btn-sm btn-outline-secondary"
+                          class="btn btn-sm btn-outline-acento"
                         >
                           Ver
                         </a>
@@ -345,7 +371,8 @@
           </div>
         </div>
       </section>
-
+     
+     
       <!-- FOOTER -->
       <footer class="container-fluid row mt-5">
         

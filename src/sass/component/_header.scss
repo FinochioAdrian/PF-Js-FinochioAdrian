@@ -28,8 +28,10 @@ header {
     
         background-color: $color-button-hover;
         border-radius: 20px;
-        border: $color-button-hover 3px solid;
+        border: $color-button-hover 2px solid;
         font-size:large;
+        font-weight: bolder;
+        transition: 500ms;
       
       }
   }
