@@ -6,10 +6,16 @@ header {
   
   .logo {
     display: block;
-    width: 75px;
-    height: 75px;
+    width: 90px;
+    height: 90px;
     margin: 1% auto;
-    border: grey 1px solid;
+    border: $color-acento 1px solid;
+    border-radius: 50px 50px;
+    &:hover{
+      transform: scale(120%);
+      transition: 500ms;
+    }
+    
   }
   
   .nav-item:hover {
