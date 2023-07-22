@@ -165,6 +165,7 @@ header {
 
 /* Page Nosotros */
 .container-img-heigth {
+  min-height: 386px;
   height: auto;
   object-fit: scale-down;
   padding: 1rem;
