@@ -1,46 +1,74 @@
 @use "../base/variables" as v;
-.card_img-size{
-    padding: 1rem;
-    img{
-      height: 250px ;
-    
-      object-fit: contain;
-    }
-  }
-  
-  
-  .card {
-    
-    border-radius: 10px;
-    background-color: v.$color-bg-card;
-    box-shadow: 5px 5px 20px v.$color-shadow-terciario !important;
-    
-  }
 
-  .btn-outline-acento{
-    background-color: transparent;
-    border: v.$color-button-hover solid 1px;
 
-    &:hover {
-    
-        background-color: v.$color-button-hover;
-        border-radius: 20px;
-        border: v.$color-button-hover 1px solid;
-        // font-size:large;
-        font-weight: bold;
-        transition: 300ms;
-      
+
+.card {
+
+  border-radius: 10px;
+  background-color: v.$color-bg-card;
+  box-shadow: 5px 5px 20px v.$color-shadow-terciario !important;
+
+  &_img {
+    &-size {
+      padding: 1rem;
+      overflow: hidden;
+
+      img {
+        height: 250px;
+        object-fit: contain;
+
+        &:hover {
+
+          transform: scale(1.1);
+          z-index: 1;
+          transition: 100ms;
+
+
+        }
       }
+    }
+
+    &-profile {
+      display: flex;
+      width: 150px;
+
+      &--style {
+        border-radius: 50%;
+        overflow: hidden;
+      }
+
+      @media (min-width:768px) {
+        display: flex;
+        width: 250px;
+      }
+
+
+
+
+    }
+
   }
 
-  @media screen and (min-width:768px) {
-    
-    .card-scale {
-      &:hover{
-      transform: scale(105%);
-      z-index: 1;
-      transition:100ms;
-    }
+}
+
+.btn-outline-acento {
+  background-color: transparent;
+  border: v.$color-button-hover solid 1px;
+
+  &:hover {
+
+    background-color: v.$color-button-hover;
+    border-radius: 20px;
+    border: v.$color-button-hover 1px solid;
+    // font-size:large;
+    font-weight: bold;
+    transition: 300ms;
+
   }
-    
-  }
+}
+
+@media(min-width:768px) {
+
+  .card-scale {}
+
+}

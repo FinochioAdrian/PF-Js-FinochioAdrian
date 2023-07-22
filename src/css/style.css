@@ -162,7 +162,7 @@ header {
 
 /* Page Nosotros */
 .container-img-heigth {
-  height: 400px;
+  height: auto;
   object-fit: scale-down;
   padding: 1rem;
   background-image: url(../img/nosotros/fachada.jpg);
@@ -181,6 +181,10 @@ header {
 .my-10 {
   margin-top: 6rem;
   margin-bottom: 6rem;
+}
+
+.borderBuild {
+  border: 1px solid red;
 }
 
 .boton {
@@ -204,18 +208,37 @@ header {
   margin-bottom: 4rem;
 }
 
+.card {
+  border-radius: 10px;
+  background-color: #f9f5f6;
+  box-shadow: 5px 5px 20px rgb(104, 100, 100) !important;
+}
 .card_img-size {
   padding: 1rem;
+  overflow: hidden;
 }
 .card_img-size img {
   height: 250px;
   object-fit: contain;
 }
-
-.card {
-  border-radius: 10px;
-  background-color: #f9f5f6;
-  box-shadow: 5px 5px 20px rgb(104, 100, 100) !important;
+.card_img-size img:hover {
+  transform: scale(1.1);
+  z-index: 1;
+  transition: 100ms;
+}
+.card_img-profile {
+  display: flex;
+  width: 150px;
+}
+.card_img-profile--style {
+  border-radius: 50%;
+  overflow: hidden;
+}
+@media (min-width: 768px) {
+  .card_img-profile {
+    display: flex;
+    width: 250px;
+  }
 }
 
 .btn-outline-acento {
@@ -230,21 +253,18 @@ header {
   transition: 300ms;
 }
 
-@media screen and (min-width: 768px) {
-  .card-scale:hover {
-    transform: scale(105%);
-    z-index: 1;
-    transition: 100ms;
-  }
-}
-#Novedades {
+#novedades {
   margin-top: 4rem;
   margin-bottom: 4rem;
   background-color: rgba(248, 232, 238, 0.4196078431);
 }
 
-#OfertasUnicas {
+#ofertasUnicas {
   padding-top: 1%;
+}
+
+#testimonios {
+  background-color: rgba(248, 232, 238, 0.4196078431);
 }
 
 /*# sourceMappingURL=style.css.map */
