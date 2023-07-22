@@ -1,9 +1,11 @@
+@use "./variables" as v;
+
 .bg-principal {
-    background-color: $color-principal;
+    background-color: v.$color-principal;
   }
   .bg-secundario {
-    background-color: $color-secundario;
+    background-color: v.$color-secundario;
   }
   .bg-acento {
-    background-color: $color-acento;
+    background-color: v.$color-acento;
   }

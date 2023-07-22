@@ -1,7 +1,9 @@
+@use "./variables" as v;
+
 .font-color-acento {
-    color: $color-font-acento !important;
+    color: v.$color-font-acento !important;
   }
   .font-principal {
-    font-family: $font-principal;
+    font-family: v.$font-principal;
   }
 

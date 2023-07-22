@@ -1,3 +1,4 @@
+@use "../base/variables" as v;
 .card_img-size{
     padding: 1rem;
     img{
@@ -9,23 +10,23 @@
   
   
   .card {
-    border: 1.2px solid $color-card-border;
+    
     border-radius: 10px;
-    background-color: $color-bg-card;
-    box-shadow: 5px 5px 20px $color-shadow-terciario !important;
+    background-color: v.$color-bg-card;
+    box-shadow: 5px 5px 20px v.$color-shadow-terciario !important;
     
   }
 
   .btn-outline-acento{
     background-color: transparent;
-    border: $color-button-hover solid 1px;
+    border: v.$color-button-hover solid 1px;
 
     &:hover {
     
-        background-color: $color-button-hover;
+        background-color: v.$color-button-hover;
         border-radius: 20px;
-        border: $color-button-hover 1px solid;
-        font-size:large;
+        border: v.$color-button-hover 1px solid;
+        // font-size:large;
         font-weight: bold;
         transition: 300ms;
       
@@ -33,11 +34,12 @@
   }
 
   @media screen and (min-width:768px) {
+    
     .card-scale {
       &:hover{
-      transform: scale(115%);
+      transform: scale(105%);
       z-index: 1;
-      transition:500ms;
+      transition:100ms;
     }
   }
     

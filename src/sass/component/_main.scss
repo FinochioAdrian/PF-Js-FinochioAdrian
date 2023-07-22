@@ -1,11 +1,14 @@
+@use "../base/variables" as v;
+
+
 .title {
     display: inline-block;
     width: 100%;
     
     text-align: center;
     font-size: 3rem;
-    text-shadow: 10px -3px  $color-principal;
-    font-family:$font-principal;
+    text-shadow: 10px -3px v.$color-principal;
+    font-family:v.$font-principal;
     font-weight: bold;
     margin: 1% auto;
   }
@@ -34,8 +37,6 @@
     margin-bottom: 6rem;
   }
 
-@import "./banner";
-@import "./main_button--nav";
-@import "./tarjetas";
+
 
 

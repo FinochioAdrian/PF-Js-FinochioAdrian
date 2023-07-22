@@ -1,3 +1,5 @@
+@use "../base/variables" as v;
+
 body {
-    background-color: $color-body !important;
+    background-color: v.$color-body !important;
   }
