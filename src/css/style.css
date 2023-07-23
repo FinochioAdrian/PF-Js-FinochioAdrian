@@ -250,11 +250,13 @@ header {
   border: rgba(214, 154, 244, 0.5490196078) solid 1px;
 }
 .btn-outline-acento:hover {
-  background-color: rgba(214, 154, 244, 0.5490196078);
-  border-radius: 20px;
-  border: rgba(214, 154, 244, 0.5490196078) 1px solid;
-  font-weight: bold;
-  transition: 300ms;
+  cursor: default !important;
+  /*  background-color: v.$color-button-hover;
+   border-radius: 20px;
+   border: v.$color-button-hover 1px solid;
+   // font-size:large;
+   font-weight: bold;
+   transition: 300ms; */
 }
 
 #novedades {
