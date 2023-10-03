@@ -10,11 +10,11 @@
 }
 
 .bg-acento {
-  background-color: rgba(214, 154, 244, 0.5490196078);
+  background-color: hsla(280, 80%, 78%, 0.549);
 }
 
 .font-color-acento {
-  color: blue !important;
+  color: #0000ff !important;
 }
 
 .font-principal {
@@ -49,7 +49,7 @@ header {
   width: 90px;
   height: 90px;
   margin: 1% auto;
-  border: rgba(214, 154, 244, 0.5490196078) 1px solid;
+  border: hsla(280, 80%, 78%, 0.549) 1px solid;
   border-radius: 50px 50px;
 }
 .logo:hover {
@@ -58,21 +58,21 @@ header {
 }
 
 .nav-item:hover {
-  background-color: rgba(214, 154, 244, 0.5490196078);
+  background-color: hsla(280, 80%, 78%, 0.549);
   border-radius: 20px;
-  border: rgba(214, 154, 244, 0.5490196078) 3px solid;
+  border: hsla(280, 80%, 78%, 0.549) 3px solid;
   scale: 115%;
   box-shadow: 0px 0px 10px grey;
 }
 
 .btn_form_search {
   background-color: transparent;
-  border: rgba(214, 154, 244, 0.5490196078) solid 4px;
+  border: hsla(280, 80%, 78%, 0.549) solid 4px;
 }
 .btn_form_search:hover {
-  background-color: rgba(214, 154, 244, 0.5490196078);
+  background-color: hsla(280, 80%, 78%, 0.549);
   border-radius: 20px;
-  border: rgba(214, 154, 244, 0.5490196078) 2px solid;
+  border: hsla(280, 80%, 78%, 0.549) 2px solid;
   font-size: large;
   font-weight: bolder;
   transition: 200ms;
@@ -122,7 +122,7 @@ header {
   right: -12px;
   font-size: 0.8em;
   text-align: center;
-  color: blue;
+  color: #0000ff;
 }
 
 .banner {
@@ -247,12 +247,12 @@ header {
 
 .btn-outline-acento {
   background-color: transparent;
-  border: rgba(214, 154, 244, 0.5490196078) solid 1px;
+  border: hsla(280, 80%, 78%, 0.549) solid 1px;
 }
 .btn-outline-acento:hover {
-  background-color: rgba(214, 154, 244, 0.5490196078);
+  background-color: hsla(280, 80%, 78%, 0.549);
   border-radius: 20px;
-  border: rgba(214, 154, 244, 0.5490196078) 1px solid;
+  border: hsla(280, 80%, 78%, 0.549) 1px solid;
   font-weight: bold;
   transition: 300ms;
 }
@@ -413,6 +413,239 @@ header {
     display: flex;
     align-items: center;
     flex-direction: row;
+  }
+}
+
+.producto__containerImg {
+  /* border: 1px solid black; */
+  height: 300px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+@media screen and (min-width: 768px) {
+  .producto__containerImg {
+    height: 70vh;
+  }
+}
+.producto__grouperImg {
+  flex-direction: column;
+  align-items: center;
+  height: 100%;
+  width: 300px;
+  padding: 1rem;
+  gap: 1rem;
+}
+.producto__imagen {
+  height: 300px;
+  width: 300px;
+  aspect-ratio: 1/1;
+  background-image: url(https://via.placeholder.com/150);
+  background-size: cover;
+  background-position: center;
+  cursor: pointer;
+}
+.producto__grouperimgMini {
+  display: none;
+  flex-wrap: nowrap;
+  height: 30%; /* El 25% de la altura de su padre (.producto__grouperImg) */
+  width: 100%;
+  justify-content: space-around;
+  align-items: center;
+}
+@media screen and (min-width: 768px) {
+  .producto__grouperimgMini {
+    display: flex;
+  }
+}
+.producto__imgMini {
+  height: 75px;
+  width: 75px;
+  aspect-ratio: 1/1;
+  cursor: pointer;
+  background-image: url(https://via.placeholder.com/150);
+  background-size: cover;
+  background-position: center;
+}
+.producto__imgMini:hover {
+  border: 3px hsla(280, 80%, 78%, 0.549) solid;
+}
+
+/* @mixin modal-background($display:none) {
+  background-color: v.$Black-modal;
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  z-index: 1;
+  display: $display;
+}
+ */
+/* @mixin image-btn($top, $left: null, $right: null) {
+  background-color: v.$White;
+
+
+  width: 40px;
+  height: 40px;
+  padding: 12px;
+  border-radius: 50%;
+
+  position: absolute;
+  top: $top;
+
+  @if $left !=null {
+    left: $left;
+    transform: translate(-50%, -50%);
+  }
+
+  @if $right !=null {
+    right: $right;
+    transform: translate(50%, -50%);
+  }
+
+  &:hover {
+    cursor: pointer;
+  }
+
+
+
+} */
+.details {
+  height: 100%;
+  width: 80%;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+}
+@media screen and (min-width: 768px) {
+  .details {
+    justify-content: center;
+  }
+}
+.details__containerDetails {
+  min-height: 35vh;
+  display: flex;
+  justify-content: center;
+  border-top: solid #eee0e0 1px;
+  border-bottom: solid #eee0e0 1px;
+  box-shadow: 0px 0px 20px #eee0e0;
+}
+@media screen and (min-width: 768px) {
+  .details__containerDetails {
+    height: 70vh;
+    border: none;
+  }
+}
+.details__title {
+  font-size: 3rem;
+}
+.details__category {
+  font-size: 2rem;
+}
+.details__description {
+  font-size: larger;
+}
+.details__prices {
+  font-size: larger;
+}
+.details__now {
+  font-size: larger;
+}
+.details__nowNumber {
+  font-weight: 600;
+}
+.details__restNumber {
+  font-weight: 600;
+}
+.details__talle {
+  font-weight: 600;
+}
+.details__product-quantity {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  gap: 1rem;
+}
+.details__button {
+  background-color: hsla(280, 100%, 72%, 0.815);
+  width: 100%;
+  height: 57px;
+  border-radius: 8px;
+  border: none;
+  color: white;
+  font-size: 0.9em;
+  font-weight: 700;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 16px;
+  margin-bottom: 10px;
+}
+.details__button:hover {
+  cursor: pointer;
+  opacity: 0.5;
+}
+@media screen and (min-width: 768px) {
+  .details__button {
+    height: 50px;
+    width: 60%;
+  }
+}
+
+.input {
+  height: 40px;
+  display: flex;
+  justify-content: between;
+  background-color: #f9f5f6;
+}
+@media screen and (min-width: 768px) {
+  .input {
+    height: 50px;
+    width: 60%;
+  }
+}
+@media screen and (max-width: 767px) {
+  .input__minus {
+    width: 40px;
+    height: 100%;
+    padding: 15px 5px;
+    cursor: pointer;
+  }
+}
+@media screen and (min-width: 768px) {
+  .input__minus {
+    width: 40px;
+    height: 100%;
+    padding: 22px 8px;
+    cursor: pointer;
+  }
+}
+.input__number {
+  width: 100%;
+  border: none;
+  background-color: #f9f5f6;
+  font-size: 1.2em;
+  font-weight: 700;
+  font-family: "Mate SC", serif;
+  text-align: center;
+  outline: none;
+}
+@media screen and (max-width: 767px) {
+  .input__plus {
+    width: 40px;
+    height: 100%;
+    padding: 10px 5px;
+    cursor: pointer;
+  }
+}
+@media screen and (min-width: 768px) {
+  .input__plus {
+    width: 40px;
+    height: 100%;
+    padding: 16px 10px;
+    cursor: pointer;
   }
 }
 

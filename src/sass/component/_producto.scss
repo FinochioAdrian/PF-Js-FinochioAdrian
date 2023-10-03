@@ -1,0 +1,63 @@
+@use "../base/variables" as v;
+
+.producto {
+    &__containerImg {
+        /* border: 1px solid black; */
+        height:300px;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        @media screen and (min-width:768px) {
+            height: 70vh;
+        }
+    }
+
+    &__grouperImg {
+        flex-direction: column;
+        align-items: center;
+        height: 100%;
+        width:300px;
+        padding: 1rem;
+        gap: 1rem;
+    }
+
+    &__imagen {
+        height:300px; 
+        width: 300px;
+        aspect-ratio: 1/1;
+        background-image: url(https://via.placeholder.com/150);
+        background-size: cover;
+        background-position: center;
+        cursor: pointer;
+    }
+
+    &__grouperimgMini {
+        display: none;
+        flex-wrap: nowrap;
+        height: 30%; /* El 25% de la altura de su padre (.producto__grouperImg) */
+        width: 100%;
+        justify-content: space-around;
+        align-items: center;
+        @media screen and (min-width:768px) {
+        display: flex;
+            
+        }
+
+    }
+
+    &__imgMini {
+        
+        
+        height: 75px; 
+        width: 75px;
+        aspect-ratio: 1/1;
+        cursor: pointer;
+       
+        background-image: url(https://via.placeholder.com/150);
+        background-size: cover;
+        background-position: center;
+        &:hover{
+            border: 3px v.$color-acento solid;
+        }
+    }
+}
