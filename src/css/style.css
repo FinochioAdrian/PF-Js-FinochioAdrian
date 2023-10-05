@@ -35,7 +35,7 @@ h3 {
 html, body {
   width: 100%;
   overflow-x: clip !important;
-  background-color: #f9f5f6 !important;
+  background-color: rgb(249, 245, 246) !important;
 }
 
 /* Header */
@@ -222,13 +222,18 @@ header {
   overflow: hidden;
 }
 .card_img-size img {
-  height: 250px;
+  height: 150px;
   object-fit: contain;
 }
 .card_img-size img:hover {
   transform: scale(1.1);
   z-index: 1;
   transition: 100ms;
+}
+@media (min-width: 768px) {
+  .card_img-size img {
+    height: 250px;
+  }
 }
 .card_img-profile {
   display: flex;
@@ -257,6 +262,13 @@ header {
   transition: 300ms;
 }
 
+.resultados__cards {
+  background-color: rgb(249, 245, 246);
+}
+.resultados__vacio {
+  height: 43vh;
+}
+
 #novedades {
   margin-top: 4rem;
   margin-bottom: 4rem;
@@ -269,6 +281,10 @@ header {
 
 #testimonios {
   background-color: rgba(248, 232, 238, 0.4196078431);
+}
+
+footer {
+  background-color: hsla(262, 65%, 93%, 0.552);
 }
 
 .footer__icon i {
@@ -598,7 +614,7 @@ header {
   height: 40px;
   display: flex;
   justify-content: between;
-  background-color: #f9f5f6;
+  background-color: rgb(249, 245, 246);
 }
 @media screen and (min-width: 768px) {
   .input {

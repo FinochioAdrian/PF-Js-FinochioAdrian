@@ -1,0 +1,74 @@
+[
+    {
+        "nombre": "Calzado",
+        "cantidad": 2,
+        "precio": 2000,
+        "categoria": "Calzado",
+        "imagen": "./src/img/calzado/calz-1.jpg",
+        "talle": "42",
+        "descripcion": "descripcion 1",
+        "estado": "usado",
+        "sexo": "Hombre",
+        "id": "1"
+      },
+    {
+        "nombre": "Mochila",
+        "cantidad": 2,
+        "precio": 2000,
+        "categoria": "Calzado",
+        "imagen": "./src/img/calzado/calz-1.jpg",
+        "talle": "L",
+        "descripcion": "descripcion 1",
+        "estado": "usado",
+        "sexo": "Unisex",
+        "id": "2"
+      },
+    {
+        "nombre": "Ropa Interior",
+        "cantidad": 2,
+        "precio": 2000,
+        "categoria": "Calzado",
+        "imagen": "./src/img/calzado/calz-1.jpg",
+        "talle": "S",
+        "descripcion": "descripcion 1",
+        "estado": "nuevo",
+        "sexo": "Mujer",
+        "id": "3"
+      },
+    {
+        "nombre": "Calzado",
+        "cantidad": 2,
+        "precio": 2000,
+        "categoria": "Calzado",
+        "imagen": "./src/img/calzado/calz-1.jpg",
+        "talle": "26",
+        "descripcion": "descripcion 1",
+        "estado": "Unisex",
+        "sexo": "",
+        "id": "4"
+      },
+    {
+        "nombre": "Calzado",
+        "cantidad": 2,
+        "precio": 2000,
+        "categoria": "Calzado",
+        "imagen": "./src/img/calzado/calz-1.jpg",
+        "talle": "39",
+        "descripcion": "descripcion 1",
+        "estado": "usado",
+        "sexo": "Unisex",
+        "id": "5"
+      },
+    {
+        "nombre": "Calzado",
+        "cantidad": 2,
+        "precio": 2500,
+        "categoria": "Calzado",
+        "imagen": "./src/img/calzado/calz-1.jpg",
+        "talle": "37",
+        "descripcion": "descripcion 1",
+        "estado": "usado",
+        "sexo": "Mujer",
+        "id": "6"
+      }
+]

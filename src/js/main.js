@@ -2,23 +2,24 @@
 import index from "./pages/index.js";
 import productos from "./pages/productos.js";
 import tienda from "./pages/tienda.js"; */
-import cartModal from "./components/cartModal";
 
+/* import cartModal from "./components/cartModal"; */
+import catalogo from "./pages/catalogo.js"
 const pathName = window.location.pathname
 const arrPathname =pathName.split("/")
 const lastPathName =arrPathname[arrPathname.length-1]
 
-
-cartModal();
-
-
+//TODO 
+/* cartModal(); */
 
 
 
+switch (lastPathName) {
 
-
-/* switch (lastPathName) {
-    case "index.html":
+    case "catalogo.html" :
+        catalogo()
+        break;
+    /* case "index.html":
         index()
       break;
     case "tienda.html":
@@ -30,7 +31,7 @@ cartModal();
     case "productos.html":
     productos()
         break;
-
+ */
     default:
         break;
-} */
+}
