@@ -471,7 +471,7 @@ footer {
 }
 @media screen and (min-width: 768px) {
   .producto__grouperimgMini {
-    display: flex;
+    display: none;
   }
 }
 .producto__imgMini {
@@ -485,6 +485,10 @@ footer {
 }
 .producto__imgMini:hover {
   border: 3px hsla(280, 80%, 78%, 0.549) solid;
+}
+
+.details__rest {
+  display: none;
 }
 
 /* @mixin modal-background($display:none) {

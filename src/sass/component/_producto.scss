@@ -39,7 +39,7 @@
         justify-content: space-around;
         align-items: center;
         @media screen and (min-width:768px) {
-        display: flex;
+        display: none;
             
         }
 
@@ -60,4 +60,7 @@
             border: 3px v.$color-acento solid;
         }
     }
+}
+.details__rest{
+    display: none;
 }

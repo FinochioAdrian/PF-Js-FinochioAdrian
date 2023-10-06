@@ -9,6 +9,10 @@
       integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3"
       crossorigin="anonymous"
     />
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.5/font/bootstrap-icons.css"
+    />
 
     <link
       href="https://fonts.googleapis.com/css2?family=Mate+SC&display=swap"
@@ -65,8 +69,8 @@
             <div class="navbar-brand navbar__title-cart d-lg-none">
               <div class="navbar__title font-principal">Abiti Usati</div>
               <div class="navbar__cart">
-                <div class="navbar__cart--notification">0</div>
-                <img src="./src/img/icon/cart3.svg" alt="cart Icon" />
+                
+                <img src="./src/img/icon/cart3.svg" alt="cart Icon" /><span class="navbar__cart--notification">0</span>
               </div>
             </div>
           </div>
@@ -150,8 +154,8 @@
                 </ul>
                 <!-- Carrito de Compras md -->
                 <div class="navbar__cart d-none d-lg-flex">
-                  <div class="navbar__cart--notification">0</div>
-                  <img src="./src/img/icon/cart3.svg" alt="cart Icon" />
+                  
+                  <img src="./src/img/icon/cart3.svg" alt="cart Icon" /><span class="navbar__cart--notification">0</span>
                 </div>
                 <!-- Fin Carrito de Compras md -->
               </div>
@@ -204,41 +208,25 @@
           <div class="card text-start">
             <div class="card-body">
               <h4 class="card-title">Resumen de Productos</h4>
-              <!-- producto en carrito -->
+              <div class="productosCarrito">
+                <!-- producto en carrito -->
               <div class="card mb-3">
                 <div class="row g-0 align-items-center cart__producto">
-                  <!-- imagen Producto -->
-                  <div class="col-3 col-md-2 cart__imgContainer">
-                    <img
-                      src="./src/img/calzado/calz-1.jpg"
-                      class="cart__img  rounded-start rounded-end"
-                      alt="Titulo Producto"
-                    />
-                  </div>
+                  
                   <!-- Detalles del Producto -->
                   <div class="col-8 col-md-8 cart__details">
                     <div class="card-body">
-                      <h5 class="card-title">Titulo Producto</h5>
-                      <div class="producto__resumenPrice d-flex flex-column flex-md-row">
-                        <p class="col-md-4">
-                          Precio: $<span class="producto__precio">1000</span>
-                        </p>
-                        <p class="col-md-4">
-                          Cantidad: $<span class="producto__cantidad">1</span>
-                        </p>
-                        <p class="col-md-4">
-                          Precio Total: $<span class="producto__precio">1000</span>
-                        </p>
-                      </div>
+                      <h5 class="card-title">No hay productos</h5>
+                      
                     </div>
                   </div>
-                  <!-- Eliminar producto -->
-                  <div class="col-1 col-md-2 cart__trashContainer">
-                    <div class="cart__trashIcon"></div>
-                  </div>
+                 
                 </div>
               </div>
               <!-- producto en carrito -->
+
+              </div>
+              
           
             </div>
           </div>
@@ -246,13 +234,13 @@
         <div class="col-md-1"></div>
         <!-- Resumen de compras -->
         <div class="cart__resumenList col-12 col-md-4">
-          <div class="cart__resumen card text-start">
+          <div class=" card text-start">
             <div class="card-body">
               <h4 class="card-title">Resumen de compra</h4>
-              
-              <p class="card-text ms-3">Producto (1) <span class="cart__subtotalTotal" >$1000</span></p>
-              <p class="card-text ms-3">Envio  <span class="cart__envio" >consultar </span></p>
-              <p class="card-text ms-3">Total  $<span class="cart__Total" >1000 </span></p>
+              <div class="cart__resumen">
+                
+              </div>
+             
             
             </div>
           </div>

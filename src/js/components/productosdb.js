@@ -1,10 +1,18 @@
-import { URLAPI } from "../components/constantes.js";
+import { URLAPI } from "../services/constantes.js";
 
 
 
 export async function recuperarCatalogo() {
     let res
  return res= await fetch(URLAPI+"productos")
+    .then(response => response.json())
+    .then(data => data)
+     
+}
+//recupera un producto
+export async function recuperarProducto(id) {
+    let res
+ return res= await fetch(URLAPI+`productos/${id}`)
     .then(response => response.json())
     .then(data => data)
      
