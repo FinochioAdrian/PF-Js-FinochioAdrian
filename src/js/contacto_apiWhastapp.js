@@ -1,7 +1,7 @@
 
 
 
-function enviarWhatsApp(e) {
+export default function enviarWhatsApp(e) {
     e.preventDefault(); // Detener el envío automático del formulario
 
   const form = document.getElementById("form__AbitiUsati-contacto");
