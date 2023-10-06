@@ -9,6 +9,10 @@
       integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3"
       crossorigin="anonymous"
     />
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.5/font/bootstrap-icons.css"
+    />
 
     <link
       href="https://fonts.googleapis.com/css2?family=Mate+SC&display=swap"
@@ -17,29 +21,26 @@
 
     <link rel="stylesheet" href="./src/css/style.css" />
 
-    <title>Abiti Usati: Tu Destino de Moda Sostenible - Nosotros</title>
+    <title>Abiti Usati: Tu Destino de Moda Sostenible - Index</title>
     <meta
       name="description"
-      content="Somos una tienda local con la misión de dar una segunda oportunidad a las prendas usadas en buen estado. Conviértete en parte de nuestra comunidad y descubre una amplia selección de moda sostenible a precios asequibles. Explora nuestra tienda en línea y únete a nosotros en la búsqueda de la moda consciente y la sostenibilidad."
+      content="Descubre en Abiti Usati una amplia selección de prendas de moda sostenible y encuentra tesoros únicos a precios asequibles. Conviértete en parte de nuestra comunidad y disfruta de la segunda vida de la moda. Explora nuestra tienda online y descubre cómo el estilo y la sostenibilidad van de la mano."
     />
     <meta
       name="keywords"
-      content="moda sostenible, prendas usadas, segunda oportunidad, moda consciente, precios asequibles, comunidad, moda sostenible en Loncopué, tienda de ropa usada, moda responsable, economía familiar"
+      content="moda sostenible, prendas usadas, tesoros únicos, precios asequibles, segunda vida de la moda, comunidad, estilo, sostenibilidad, Ropa usada Loncopué, Compra ropa usada, Venta de ropa de segunda mano, Tienda de ropa usada en Loncopué, Moda sostenible Loncopué, Ropa de calidad usada, Tienda de ropa vintage Loncopué, Prendas de vestir usadas en buen estado, Ropa de marca usada, Descuentos en ropa usada, Moda asequible en Loncopué, Ropa usada para hombres, mujeres y niños, Tienda online de ropa de segunda mano, Ropa de temporada usada, Estilo único con ropa usada"
     />
 
     <!-- Etiquetas Open Graph -->
     <meta
       property="og:title"
-      content="Abiti Usati: Tu Destino de Moda Sostenible"
+      content="Abiti Usati: Tu Destino de Moda Sostenible - Index"
     />
     <meta
       property="og:description"
-      content="Somos una tienda local con la misión de dar una segunda oportunidad a las prendas usadas en buen estado. Conviértete en parte de nuestra comunidad y descubre una amplia selección de moda sostenible a precios asequibles. Explora nuestra tienda en línea y únete a nosotros en la búsqueda de la moda consciente y la sostenibilidad."
+      content="Descubre en Abiti Usati una amplia selección de prendas de moda sostenible y encuentra tesoros únicos a precios asequibles. Conviértete en parte de nuestra comunidad y disfruta de la segunda vida de la moda. Explora nuestra tienda online y descubre cómo el estilo y la sostenibilidad van de la mano."
     />
-    <meta
-      property="og:url"
-      content="https://abitiusati.netlify.app/nosotros.html"
-    />
+    <meta property="og:url" content="https://abitiusati.netlify.app/" />
     <meta
       property="og:image"
       content="https://abitiusati.netlify.app/src/img/logo/Logo_AbitiUsati.png"
@@ -48,7 +49,7 @@
     <meta property="og:site_name" content="Abiti Usati" />
   </head>
   <body>
-    <!-- Header -->
+    <!-- ========== Start Header Nav ========== -->
     <header class="bg-principal" id="inicio">
       <!-- Nav -->
       <nav class="navbar navbar-expand-lg navbar-light">
@@ -186,64 +187,92 @@
       </div>
     </div>
     <!-- ========== End Modal--Carrito ========== -->
-    <main>
-      <section class="container-fluid my-10">
-        <div class="card my-3 mx-md-5">
-          <div class="row g-0">
-            <div class="col-md-4 container-img-heigth"></div>
-            <div class="col-md-8">
-              <div class="card-body">
-                <div class="col my-md-5 ms-md-3">
-                  <h2 class="card-title font-principal text-center">
-                    Feria Americana Abiti Usati
-                  </h2>
-                  <p class="card-text text-center">
-                    "En Abiti Usati, damos una segunda oportunidad a las prendas
-                    usadas en buen estado. Nuestra misión es ofrecer moda
-                    consciente y sostenible, con ropa de calidad a precios
-                    asequibles. Apoyamos la economía familiar y seleccionamos
-                    cuidadosamente cada prenda para asegurar altos
-                    estándares.<br />
-
-                    Formamos parte de la solución al desperdicio textil,
-                    contribuyendo a un consumo responsable. Nuestro equipo
-                    amable y profesional está aquí para ayudarte a encontrar ese
-                    tesoro único que refleje tu estilo personal. Únete a nuestra
-                    comunidad y descubre la emoción de la moda con propósito.".
-                  </p>
-                </div>
-              </div>
+    <!-- ========== End Header Nav ========== -->
+    <!-- ========== Start Main ========== -->
+    <main class="container-fluid">
+      <!-- ========== Start breadcrumb ========== -->
+      <nav class="breadcrumb my-2">
+        <a class="breadcrumb-item" href="#">Incio</a>
+        <a class="breadcrumb-item" href="#">Productos</a>
+        <span class="breadcrumb-item active" aria-current="page"
+          >producto XXX</span
+        >
+      </nav>
+      <!-- ========== End breadcrumb ========== -->
+      
+      <div
+        class="row flex-column flex-md-row align-items-center text-center p-md-3"
+      >
+        <!-- Imagenes del producto -->
+        <div class="col-12 col-md-6 producto__containerImg">
+          <div class="d-flex col-12 producto__grouperImg">
+            <div class="producto__imagen"></div>
+            <div class="producto__grouperimgMini">
+              <div class="producto__imgMini"></div>
+              <div class="producto__imgMini"></div>
+              <div class="producto__imgMini"></div>
             </div>
           </div>
         </div>
-      </section>
+        <!-- Propiedades del Producto -->
+        <div class="col-12 col-md-6 bg-body details__containerDetails">
+          <div class="details">
+            <h2 class="details__title">titulo</h2>
+            <h3 class="details__category">Categoria</h3>
+            <p class="details__description">Talle: <span class="details__talle">XXL</span></p>
+            <div class="details__prices">
+              <p class="details__now">Precio: <span class="details__nowNumber">$1000</span></p>
+            </div>
+            <p class="details__rest">Cantidad restante: <span class="details__restNumber" >10</span></p>
+            <div class="details__product-quantity">
+              <div class="input">
+                <img
+                  class="input__minus"
+                  src="./src/img/icon/icon-minus.svg"
+                  alt="minus"
+                />
+                <input class="input__number" type="txt" value="0" />
+                <img
+                  class="input__plus"
+                  src="./src/img/icon/icon-plus.svg"
+                  alt="plus"
+                />
+              </div>
+              <button class="details__button btn_addCart">
+                <img src="./src/img/icon/icon-cart-white.svg" alt="cart image" />
+                Add to cart
+              </button>
+            </div>
+          </div>
+        </div>
+      </div>
     </main>
+    <!-- ========== End Main ========== -->
 
     <!-- FOOTER -->
+    <!-- FOOTER -->
     <footer class="container-fluid row mt-5">
-      <p class="col-md-4 mb-0 text-muted ">Abiti Usati © 2023 Company, Inc</p>
+      <p class="col-md-4 mb-0 text-muted">Abiti Usati © 2023 Company, Inc</p>
 
-      <ul class="nav col-md-4 justify-content-center list-unstyled d-flex ">
+      <ul class="nav col-md-4 justify-content-center list-unstyled d-flex">
         <li class="ms-3">
-          <a class="text-muted footer__icon" href="#"
-            >
+          <a class="text-muted footer__icon" href="#">
             <i class="bi bi-twitter"></i>
           </a>
         </li>
         <li class="ms-3">
-          <a class="text-muted footer__icon" href="#"
-            >
-            <i class="bi bi-instagram"></i></a>
+          <a class="text-muted footer__icon" href="#">
+            <i class="bi bi-instagram"></i
+          ></a>
         </li>
         <li class="ms-3">
-          <a class="text-muted footer__icon" href="#"
-            >
+          <a class="text-muted footer__icon" href="#">
             <i class="bi bi-facebook"></i>
-        </a>
+          </a>
         </li>
       </ul>
 
-      <ul class="nav col-md-4 justify-content-center ">
+      <ul class="nav col-md-4 justify-content-center">
         <li class="nav-item">
           <a href="index.html" class="nav-link px-2 text-muted">Inicio</a>
         </li>
@@ -271,17 +300,20 @@
           target="_blank"
           rel="noopener noreferrer"
         >
-        <i class="bi bi-github"></i></a>
+          <i class="bi bi-github"></i
+        ></a>
       </div>
     </footer>
+    <!-- /FOOTER -->
+
+    <!-- Scripts -->
 
     <script
       src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js"
       integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p"
       crossorigin="anonymous"
     ></script>
-
-    <script type="module" src="./src/js/main.js"></script>
-
+<script type="module" src="./src/js/main.js"></script>
+    <!-- /Scripts -->
   </body>
 </html>

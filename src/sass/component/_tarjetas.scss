@@ -14,7 +14,7 @@
       overflow: hidden;
 
       img {
-        height: 250px;
+        height: 150px;
         object-fit: contain;
 
         &:hover {
@@ -24,6 +24,9 @@
           transition: 100ms;
 
 
+        }
+        @media (min-width:768px) {
+          height: 250px;
         }
       }
     }
@@ -66,9 +69,16 @@
 
   }
 }
-
+.resultados{
+  &__cards {
+background-color: v.$color-body;
+  }
+  &__vacio{
+    height: 43vh;
+  }
+}
 @media(min-width:768px) {
 
-  .card-scale {}
+  
 
 }

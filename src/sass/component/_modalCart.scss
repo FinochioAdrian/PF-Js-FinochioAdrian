@@ -1,0 +1,26 @@
+@use "../base/variables" as v;
+
+/* Modal Carrito */
+.modal-carrito {
+    position: absolute;
+    right:0;
+    margin: 10px;
+    padding: 10px;
+    border-radius: 15px;
+    /* width: 100px; */
+    min-height: min-content;
+    background-color: aliceblue;
+    z-index: 100;
+    display: none;
+    
+  }
+  
+  .show {
+    display: block;
+  }
+  
+  .bi-trash-fill {
+  font-size: 2rem;
+  color: red;
+  cursor: pointer;
+  }
