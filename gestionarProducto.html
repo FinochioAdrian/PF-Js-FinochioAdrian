@@ -18,6 +18,11 @@
       href="https://fonts.googleapis.com/css2?family=Mate+SC&display=swap"
       rel="stylesheet"
     />
+    <link
+      rel="stylesheet"
+      type="text/css"
+      href="https://cdn.jsdelivr.net/npm/toastify-js/src/toastify.min.css"
+    />
 
     <link rel="stylesheet" href="./src/css/style.css" />
 
@@ -153,6 +158,14 @@
                       >Testimonio</a
                     >
                   </li>
+                  
+                  <li class="nav-item">
+                    <a
+                      class="nav-link font-color-acento fw-bolder font-principal"
+                      href="gestionarProducto.html"
+                      >Nuevo Producto</a
+                    >
+                  </li>
                 </ul>
                 <!-- Carrito de Compras md -->
                 <div class="navbar__cart d-none d-lg-flex">
@@ -206,35 +219,70 @@
       </nav>
       <!-- ========== End breadcrumb ========== -->
 
-      <div class="cart__container container-fluid d-flex flex-wrap justify-content-center">
-        <div class=" col-12 col-md-7">
+      <div
+        class="cart__container container-fluid d-flex flex-wrap justify-content-center"
+      >
+        <div class="col-12 col-md-7">
           <div class="card text-start">
             <div class="card-body">
               <h4 class="card-title text-center">Añadir Producto</h4>
               <form id="form-productos" class="col-10 m-2">
-                
                 <!-- Nombre -->
                 <div class="mb-2 col-auto">
-                  <label for="nombreProduct" class="form-label">Nombre Producto <span class="text-danger">*</span></label>
-                  <input type="text" class="form-control form-inputs" name="nombre" id="nombreProduct" aria-describedby="helpId"
-                    placeholder="Introduzca un nombre del producto"/>
+                  <label for="nombreProduct" class="form-label"
+                    >Nombre Producto <span class="text-danger">*</span></label
+                  >
+                  <input
+                    type="text"
+                    class="form-control form-inputs"
+                    name="nombre"
+                    id="nombreProduct"
+                    aria-describedby="helpId"
+                    placeholder="Introduzca un nombre del producto"
+                  />
                 </div>
                 <!-- Precio -->
                 <div class="mb-2 col-auto">
-                  <label for="precioProduct" class="form-label">Precio <span class="text-danger">*</span></label>
-                  <input type="number" class="form-control form-inputs" name="precio" min="0" step="0.1" id="precioProduct"
-                    aria-describedby="precio producto" placeholder="Ingrese un Precio $$$$" />
+                  <label for="precioProduct" class="form-label"
+                    >Precio <span class="text-danger">*</span></label
+                  >
+                  <input
+                    type="number"
+                    class="form-control form-inputs"
+                    name="precio"
+                    min="0"
+                    step="0.1"
+                    id="precioProduct"
+                    aria-describedby="precio producto"
+                    placeholder="Ingrese un Precio $$$$"
+                  />
                 </div>
                 <!-- Stock -->
                 <div class="mb-2 col-auto">
-                  <label for="stockProduct" class="form-label">Stock del Producto <span class="text-danger">*</span></label>
-                  <input type="number" class="form-control form-inputs" name="stock" min="1" id="stockProduct" aria-describedby="helpId"
-                    placeholder="Introduce el Stock del Producto" />
+                  <label for="stockProduct" class="form-label"
+                    >Stock del Producto
+                    <span class="text-danger">*</span></label
+                  >
+                  <input
+                    type="number"
+                    class="form-control form-inputs"
+                    name="stock"
+                    min="1"
+                    id="stockProduct"
+                    aria-describedby="helpId"
+                    placeholder="Introduce el Stock del Producto"
+                  />
                 </div>
                 <!-- Categoria -->
                 <div class="mb-2">
-                  <label for="categoriaProduct" class="form-label">Categoría <span class="text-danger">*</span></label>
-                  <select class="form-select  form-inputs" name="categoria" id="categoriaProduct">
+                  <label for="categoriaProduct" class="form-label"
+                    >Categoría <span class="text-danger">*</span></label
+                  >
+                  <select
+                    class="form-select form-inputs categoriaProductSelected"
+                    name="categoria"
+                    id="categoriaProduct"
+                  >
                     <option selected disabled value="-1">Categoría</option>
                     <option value="Calzado">Calzado</option>
                     <option value="Remera">Remera</option>
@@ -244,38 +292,71 @@
                   </select>
                 </div>
                 <!-- Talle -->
-                <div class="mb-2">
-                  <label for="talleProduct" class="form-label">Estado del producto<span class="text-danger">*</span></label>
-                  <select class="form-select  form-inputs" name="talle" id="talleProduct">
-                    <option selected disabled value="-1">Talle del producto</option>
-                    <option value="Nuevo">Nuevo</option>
-                    <option value="Usado">Usado</option>
-                    
-                  </select>
+                <div class="mb-2 col-auto">
+                  <label for="talleProduct" class="form-label"
+                    >Talle del producto <span class="text-danger">*</span></label
+                  >
+                  <input
+                    type="text"
+                    class="form-control form-inputs"
+                    name="talle"
+                    id="talleProduct"
+                    aria-describedby="helpId"
+                    placeholder="Introduzca un talle del producto"
+                  />
                 </div>
+               
                 <!-- Estado -->
                 <div class="mb-2">
-                  <label for="estadoProduct" class="form-label">Estado del producto<span class="text-danger">*</span></label>
-                  <select class="form-select  form-inputs" name="estado" id="estadoProduct">
-                    <option selected disabled value="-1">Estado del producto</option>
+                  <label for="estadoProduct" class="form-label"
+                    >Estado del producto<span class="text-danger"
+                      >*</span
+                    ></label
+                  >
+                  <select
+                    class="form-select form-inputs"
+                    name="estado"
+                    id="estadoProduct"
+                  >
+                    <option selected disabled value="-1">
+                      Estado del producto
+                    </option>
                     <option value="Nuevo">Nuevo</option>
                     <option value="Usado">Usado</option>
-                    
                   </select>
                 </div>
-                
+
                 <!-- Detalle -->
                 <div class="mb-2">
-                  <label for="descripcionProduct" class="form-label">Descripción Producto <span
-                      class="text-danger">*</span></label>
-                  <textarea class="form-control form-inputs" name="descripcion" id="descripcionProduct" rows="1" placeholder="Introduzca una Descripción"></textarea>
+                  <label for="descripcionProduct" class="form-label"
+                    >Descripción Producto
+                    <span class="text-danger">*</span></label
+                  >
+                  <textarea
+                    class="form-control form-inputs"
+                    name="descripcion"
+                    id="descripcionProduct"
+                    rows="1"
+                    placeholder="Introduzca una Descripción"
+                  ></textarea>
                 </div>
                 <!-- Image -->
                 <div class="mb-3">
-                  <label for="imagenProducts" class="form-label">Url Imgen</label>
-                  <input type="url"
-                    class="form-control" name="imagen" id="imagenProducts" aria-describedby="helpId" placeholder="https://www.ejemploUrl.com">
-                  <small id="helpId" class="form-text text-muted">***Si no se proporciona una URL de imagen se usara favicon por defecto</small>
+                  <label for="imagenProducts" class="form-label"
+                    >Url Imgen</label
+                  >
+                  <input
+                    type="url"
+                    class="form-control"
+                    name="imagen"
+                    id="imagenProducts"
+                    aria-describedby="helpId"
+                    placeholder="https://www.ejemploUrl.com"
+                  />
+                  <small id="helpId" class="form-text text-muted"
+                    >***Si no se proporciona una URL de imagen se usara favicon
+                    por defecto</small
+                  >
                 </div>
                 <!-- <div class="mb-2">
                   <label for="imageProduct" class="form-label">Imagen del Producto</label>
@@ -283,7 +364,10 @@
                     aria-describedby="fileHelpId" />
                 </div> -->
                 <div class="d-flex justify-content-center">
-                  <button type="submit" class="btn btn-primary btn-submit btn-lg">
+                  <button
+                    type="submit"
+                    class="btn btn-primary btn-submit btn-lg"
+                  >
                     Enviar
                   </button>
                 </div>
@@ -361,7 +445,10 @@
     ></script>
 
     <script src="https://cdn.jsdelivr.net/npm/sweetalert2@11"></script>
-
+    <script
+      type="text/javascript"
+      src="https://cdn.jsdelivr.net/npm/toastify-js"
+    ></script>
     <script type="module" src="./src/js/main.js"></script>
 
     <!-- /Scripts -->
