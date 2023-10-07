@@ -1,0 +1,19 @@
+{
+  "name": "preentrega3-finochioadrian",
+  "version": "1.0.0",
+  "description": "In this project I work with bootstrap framework and custom css styling. This project is a part of the final delivery that consists of the frontend of a virtual store.",
+  "main": "index.html",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/FinochioAdrian/PreEntrega3-FinochioAdrian.git"
+  },
+  "author": "Finochio Adrian",
+  "license": "CC by-nc-nd",
+  "bugs": {
+    "url": "https://github.com/FinochioAdrian/PreEntrega3-FinochioAdrian/issues"
+  },
+  "homepage": "https://finochioadrian.github.io/PreEntrega3-FinochioAdrian/"
+}

@@ -1,0 +1,7 @@
+@use "../base/variables" as v;
+
+html,body {
+    width: 100%;
+    overflow-x: clip !important;
+    background-color: v.$color-body !important;
+  }

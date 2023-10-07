@@ -1,0 +1,19 @@
+@use "../base/variables" as v;
+
+#novedades {
+    margin-top: 4rem;
+    margin-bottom: 4rem;
+    background-color: v.$color-secundario;
+    // box-shadow: 0px -5px 10px v.$color-shadow-secundario;
+    
+  }
+
+  #ofertasUnicas {
+    padding-top: 1%;
+  }
+
+  #testimonios {
+    
+    background-color: v.$color-secundario;
+  
+  }

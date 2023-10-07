@@ -1,0 +1,48 @@
+@use "../base/variables" as v;
+
+/* Header */
+header {
+    border-bottom: v.$color-border-principal 3px solid;
+    box-shadow: 0 2px 10px v.$color-shadow-principal;
+  }
+  
+  .logo {
+    display: flexbox;
+    width: 90px;
+    height: 90px;
+    margin: 1% auto;
+    border: v.$color-acento 1px solid;
+    border-radius: 50px 50px;
+    &:hover{
+      transform: scale(120%);
+      transition: 500ms;
+    }
+    
+  }
+  
+  .nav-item:hover {
+    background-color: v.$color-button-hover;
+    border-radius: 20px;
+    border: v.$color-button-hover 3px solid;
+    scale: 115%;
+    box-shadow: 0px 0px 10px grey;
+  
+  }
+  
+  .btn_form_search {
+    background-color: transparent;
+    border: v.$color-button-hover solid 4px;
+    &:hover {
+    
+        background-color: v.$color-button-hover;
+        border-radius: 20px;
+        border: v.$color-button-hover 2px solid;
+        font-size:large;
+        font-weight: bolder;
+        transition: 200ms;
+      
+      }
+  }
+  
+  
+  /* /Header */
