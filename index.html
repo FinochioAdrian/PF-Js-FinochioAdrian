@@ -1,24 +1,34 @@
 <!-- <!DOCTYPE html> -->
 <html lang="es">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3"
+      crossorigin="anonymous"
+    />
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.5/font/bootstrap-icons.css">
 
-<head>
-  <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet"
-    integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous" />
-  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.5/font/bootstrap-icons.css" />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Mate+SC&display=swap"
+      rel="stylesheet"
+    />
 
-  <link href="https://fonts.googleapis.com/css2?family=Mate+SC&display=swap" rel="stylesheet" />
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet" />
 
-  <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet" />
+    <link rel="stylesheet" href="./src/css/style.css" />
 
-  <link rel="stylesheet" href="./src/css/style.css" />
-
-  <title>Abiti Usati: Tu Destino de Moda Sostenible - Index</title>
-  <meta name="description"
-    content="Descubre en Abiti Usati una amplia selección de prendas de moda sostenible y encuentra tesoros únicos a precios asequibles. Conviértete en parte de nuestra comunidad y disfruta de la segunda vida de la moda. Explora nuestra tienda online y descubre cómo el estilo y la sostenibilidad van de la mano." />
-  <meta name="keywords"
-    content="moda sostenible, prendas usadas, tesoros únicos, precios asequibles, segunda vida de la moda, comunidad, estilo, sostenibilidad, Ropa usada Loncopué, Compra ropa usada, Venta de ropa de segunda mano, Tienda de ropa usada en Loncopué, Moda sostenible Loncopué, Ropa de calidad usada, Tienda de ropa vintage Loncopué, Prendas de vestir usadas en buen estado, Ropa de marca usada, Descuentos en ropa usada, Moda asequible en Loncopué, Ropa usada para hombres, mujeres y niños, Tienda online de ropa de segunda mano, Ropa de temporada usada, Estilo único con ropa usada" />
+    <title>Abiti Usati: Tu Destino de Moda Sostenible - Index</title>
+    <meta
+      name="description"
+      content="Descubre en Abiti Usati una amplia selección de prendas de moda sostenible y encuentra tesoros únicos a precios asequibles. Conviértete en parte de nuestra comunidad y disfruta de la segunda vida de la moda. Explora nuestra tienda online y descubre cómo el estilo y la sostenibilidad van de la mano."
+    />
+    <meta
+      name="keywords"
+      content="moda sostenible, prendas usadas, tesoros únicos, precios asequibles, segunda vida de la moda, comunidad, estilo, sostenibilidad, Ropa usada Loncopué, Compra ropa usada, Venta de ropa de segunda mano, Tienda de ropa usada en Loncopué, Moda sostenible Loncopué, Ropa de calidad usada, Tienda de ropa vintage Loncopué, Prendas de vestir usadas en buen estado, Ropa de marca usada, Descuentos en ropa usada, Moda asequible en Loncopué, Ropa usada para hombres, mujeres y niños, Tienda online de ropa de segunda mano, Ropa de temporada usada, Estilo único con ropa usada"
+    />
 
     <!-- Etiquetas Open Graph -->
     <meta
@@ -223,99 +233,135 @@
             />
           </div>
         </div>
+        <button
+          class="carousel-control-prev"
+          type="button"
+          data-bs-target="#carouselExampleInterval"
+          data-bs-slide="prev"
+        >
+          <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+          <span class="visually-hidden">Anterior</span>
+        </button>
+        <button
+          class="carousel-control-next"
+          type="button"
+          data-bs-target="#carouselExampleInterval"
+          data-bs-slide="next"
+        >
+          <span class="carousel-control-next-icon" aria-hidden="true"></span>
+          <span class="visually-hidden">Siguiente</span>
+        </button>
       </div>
-      <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleInterval"
-        data-bs-slide="prev">
-        <span class="carousel-control-prev-icon" aria-hidden="true"></span>
-        <span class="visually-hidden">Anterior</span>
-      </button>
-      <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleInterval"
-        data-bs-slide="next">
-        <span class="carousel-control-next-icon" aria-hidden="true"></span>
-        <span class="visually-hidden">Siguiente</span>
-      </button>
-    </div>
-    <!-- Botones de Navegacion -->
-    <div class="container-fluid nav-index" id="nav-index">
-      <div class="row justify-content-evenly">
-        <a class="boton col-7 col-md-2 border-1 g-2 g-md-0 font-color-acento fw-bolder font-principal" href="#novedades"
-          role="button">Novedades</a>
-        <a class="boton col-7 col-md-2 border-1 g-2 g-md-0 font-color-acento fw-bolder font-principal"
-          href="#ofertasUnicas" role="button">Ofertas</a>
-        <a class="boton col-7 col-md-2 border-1 g-2 g-md-0 font-color-acento fw-bolder font-principal" href="catalogo.html"
-          role="button">Catálogos</a>
+      <!-- Botones de Navegacion -->
+      <div class="container-fluid nav-index" id="nav-index">
+        <div class="row justify-content-evenly">
+          <a
+            class="boton col-7 col-md-2 border-1 g-2 g-md-0 font-color-acento fw-bolder font-principal"
+            href="#novedades"
+            role="button"
+            >Novedades</a
+          >
+          <a
+            class="boton col-7 col-md-2 border-1 g-2 g-md-0 font-color-acento fw-bolder font-principal"
+            href="#ofertasUnicas"
+            role="button"
+            >Ofertas</a
+          >
+          <a
+            class="boton col-7 col-md-2 border-1 g-2 g-md-0 font-color-acento fw-bolder font-principal"
+            href="#"
+            role="button"
+            >Catálogos</a
+          >
+        </div>
       </div>
-    </div>
-    <!-- Novedades -->
-    <section class="container-fluid my-5" id="novedades">
-      <div class="title">
-        <h2>Novedades</h2>
-      </div>
-      <div class="py-5">
-        <div class="container">
-          <div class="row row-cols-1 row-cols-sm-2 row-cols-md-3 g-3">
-            <!-- Tarjeta 1 -->
-            <div data-aos="fade-right" class="col card-scale">
-              <div class="card shadow-sm">
-                <h3 class="card-title font-principal text-center fw-bolder">
-                  Calzado
-                </h3>
+      <!-- Novedades -->
+      <section class="container-fluid my-5" id="novedades">
+        <div class="title"><h2>Novedades</h2></div>
+        <div class="py-5">
+          <div class="container">
+            <div class="row row-cols-1 row-cols-sm-2 row-cols-md-3 g-3">
+              <!-- Tarjeta 1 -->
+              <div data-aos="fade-right" class="col card-scale">
+                <div class="card shadow-sm">
+                  <h3 class="card-title font-principal text-center fw-bolder">
+                    Calzado
+                  </h3>
 
-                <div class="card_img-size">
-                  <img class="card-img-top" src="./src/img/calzado/calz-1.jpg" alt="" />
-                </div>
+                  <div class="card_img-size">
+                    <img
+                      class="card-img-top"
+                      src="./src/img/calzado/calz-1.jpg"
+                      alt=""
+                    />
+                  </div>
 
-                <div class="card-body">
-                  <div class="d-flex justify-content-between align-items-center">
-                    <div class="btn-group w-100">
-                      <a type="button" class="btn btn-sm btn-outline-acento" disabled>
-                        Ver
-                      </a>
+                  <div class="card-body">
+                    <div
+                      class="d-flex justify-content-between align-items-center"
+                    >
+                      <div class="btn-group w-100">
+                        <a type="button" class="btn btn-sm btn-outline-acento">
+                          Ver
+                        </a>
+                      </div>
                     </div>
                   </div>
                 </div>
               </div>
-            </div>
-            <!-- Tarjeta 2 -->
+              <!-- Tarjeta 2 -->
 
-            <div data-aos="fade-up" class="col card-scale">
-              <div class="card shadow-sm">
-                <h3 class="card-title font-principal text-center fw-bolder">
-                  Mochila
-                </h3>
-                <div class="card_img-size">
-                  <img class="card-img-top" src="./src/img/mix/mochila1.jpg" alt="" />
-                </div>
+              <div data-aos="fade-up" class="col card-scale">
+                <div class="card shadow-sm">
+                  <h3 class="card-title font-principal text-center fw-bolder">
+                    Mochila
+                  </h3>
+                  <div class="card_img-size">
+                    <img
+                      class="card-img-top"
+                      src="./src/img/mix/mochila1.jpg"
+                      alt=""
+                    />
+                  </div>
 
-                <div class="card-body">
-                  <div class="d-flex justify-content-between align-items-center">
-                    <div class="btn-group w-100">
-                      <a type="button" class="btn btn-sm btn-outline-acento" disabled>
-                        Ver
-                      </a>
+                  <div class="card-body">
+                    <div
+                      class="d-flex justify-content-between align-items-center"
+                    >
+                      <div class="btn-group w-100">
+                        <a type="button" class="btn btn-sm btn-outline-acento">
+                          Ver
+                        </a>
+                      </div>
                     </div>
                   </div>
                 </div>
               </div>
-            </div>
-            <!-- Tarjeta 3 -->
+              <!-- Tarjeta 3 -->
 
-            <div data-aos="fade-left" class="col card-scale">
-              <div class="card shadow-sm">
-                <h3 class="card-title font-principal text-center fw-bolder">
-                  Ropa Iterior
-                </h3>
+              <div data-aos="fade-left" class="col card-scale">
+                <div class="card shadow-sm">
+                  <h3 class="card-title font-principal text-center fw-bolder">
+                    Ropa Iterior
+                  </h3>
 
-                <div class="card_img-size">
-                  <img class="card-img-top" src="./src/img/ropainterior/rI1.jpg" alt="" />
-                </div>
+                  <div class="card_img-size">
+                    <img
+                      class="card-img-top"
+                      src="./src/img/ropainterior/rI1.jpg"
+                      alt=""
+                    />
+                  </div>
 
-                <div class="card-body">
-                  <div class="d-flex justify-content-between align-items-center">
-                    <div class="btn-group w-100">
-                      <a type="button" class="btn btn-sm btn-outline-acento" disabled>
-                        Ver
-                      </a>
+                  <div class="card-body">
+                    <div
+                      class="d-flex justify-content-between align-items-center"
+                    >
+                      <div class="btn-group w-100">
+                        <a type="button" class="btn btn-sm btn-outline-acento">
+                          Ver
+                        </a>
+                      </div>
                     </div>
                   </div>
                 </div>
@@ -323,22 +369,19 @@
             </div>
           </div>
         </div>
-      </div>
-    </section>
-    <!-- Ofertas Unicas -->
-    <section class="container-fluid" id="ofertasUnicas">
-      <div class="title">
-        <h2>Ofertas Unicas</h2>
-      </div>
-      <div class="py-5">
-        <div class="container">
-          <div class="row row-cols-1 row-cols-sm-2 row-cols-md-3 g-3">
-            <!-- Tarjeta 1 -->
-            <div data-aos="fade-right" class="col card-scale">
-              <div class="card shadow-sm">
-                <h3 class="card-title font-principal text-center fw-bolder">
-                  Calzado
-                </h3>
+      </section>
+      <!-- Ofertas Unicas -->
+      <section class="container-fluid" id="ofertasUnicas">
+        <div class="title"><h2>Ofertas Unicas</h2></div>
+        <div class="py-5">
+          <div class="container">
+            <div class="row row-cols-1 row-cols-sm-2 row-cols-md-3 g-3">
+              <!-- Tarjeta 1 -->
+              <div data-aos="fade-right" class="col card-scale">
+                <div class="card shadow-sm">
+                  <h3 class="card-title font-principal text-center fw-bolder">
+                    Calzado
+                  </h3>
 
                   <div class="card_img-size">
                     <img
@@ -348,18 +391,20 @@
                     />
                   </div>
 
-                <div class="card-body">
-                  <div class="d-flex justify-content-between align-items-center">
-                    <div class="btn-group w-100">
-                      <a type="button" class="btn btn-sm btn-outline-acento" disabled>
-                        Ver
-                      </a>
+                  <div class="card-body">
+                    <div
+                      class="d-flex justify-content-between align-items-center"
+                    >
+                      <div class="btn-group w-100">
+                        <a type="button" class="btn btn-sm btn-outline-acento">
+                          Ver
+                        </a>
+                      </div>
                     </div>
                   </div>
                 </div>
               </div>
-            </div>
-            <!-- Tarjeta 2 -->
+              <!-- Tarjeta 2 -->
 
               <div data-aos="fade-up" class="col card-scale">
                 <div class="card shadow-sm">
@@ -374,24 +419,26 @@
                     />
                   </div>
 
-                <div class="card-body">
-                  <div class="d-flex justify-content-between align-items-center">
-                    <div class="btn-group w-100">
-                      <a type="button" class="btn btn-sm btn-outline-acento" disabled>
-                        Ver
-                      </a>
+                  <div class="card-body">
+                    <div
+                      class="d-flex justify-content-between align-items-center"
+                    >
+                      <div class="btn-group w-100">
+                        <a type="button" class="btn btn-sm btn-outline-acento">
+                          Ver
+                        </a>
+                      </div>
                     </div>
                   </div>
                 </div>
               </div>
-            </div>
-            <!-- Tarjeta 3 -->
+              <!-- Tarjeta 3 -->
 
-            <div data-aos="fade-left" class="col card-scale">
-              <div class="card shadow-sm">
-                <h3 class="card-title font-principal text-center fw-bolder">
-                  Calzado
-                </h3>
+              <div data-aos="fade-left" class="col card-scale">
+                <div class="card shadow-sm">
+                  <h3 class="card-title font-principal text-center fw-bolder">
+                    Calzado
+                  </h3>
 
                   <div class="card_img-size">
                     <img
@@ -401,12 +448,15 @@
                     />
                   </div>
 
-                <div class="card-body">
-                  <div class="d-flex justify-content-between align-items-center">
-                    <div class="btn-group w-100">
-                      <a type="button" class="btn btn-sm btn-outline-acento" disabled>
-                        Ver
-                      </a>
+                  <div class="card-body">
+                    <div
+                      class="d-flex justify-content-between align-items-center"
+                    >
+                      <div class="btn-group w-100">
+                        <a type="button" class="btn btn-sm btn-outline-acento">
+                          Ver
+                        </a>
+                      </div>
                     </div>
                   </div>
                 </div>
@@ -414,111 +464,137 @@
             </div>
           </div>
         </div>
-      </div>
-    </section>
-    <!-- Testimonios -->
-    <section class="container-fluid my-10" id="testimonios">
-      <div class="title">
-        <h2>Testimonios</h2>
-      </div>
-      <!-- Testimonio 1 -->
-      <div class="card my-3 align-items-start " data-aos="fade-right" data-aos-offset="150"
+      </section>
+      <!-- Testimonios -->
+      <section class="container-fluid my-10" id="testimonios">
+        <div class="title"><h2>Testimonios</h2></div>
+        <!-- Testimonio 1 -->
+        <div class="card my-3 align-items-start " data-aos="fade-right"
+        data-aos-offset="150"
         data-aos-easing="ease-in-sine">
-        <div class="row justify-content-lg-evenly col-12 ">
-          <div class="d-flex order-2 card-body col-lg-8  justify-content-center ">
-            <div class="row  my-md-5  justify-content-center ">
-              <h2 class="card-title font-principal text-center col-12">
-                Amelia Luca
-              </h2>
-              <p class="card-text text-center fst-italic  col-12 fs-5">
-                "Es la mejor tienda de ropa usada, toda la ropa esta en muy
-                buenas condiciones"
-              </p>
+          <div class="row g-0">
+            <div class="order-2 card-body col-md-8">
+              <div class="col my-md-5 ms-md-3">
+                <h2 class="card-title font-principal text-center">
+                  Amelia Luca
+                </h2>
+                <p class="card-text text-center fst-italic">
+                  "Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                  Possimus reiciendis ad, quae perspiciatis a ipsam, tempore sed
+                  hic sunt animi nulla nobis ratione voluptate architecto minus
+                  exercitationem molestiae, dolorem illo.""
+                </p>
+              </div>
             </div>
-          </div>
-          <div class="d-flex order-1 order-lg-2 col-lg-4 justify-content-center align-items-center  ">
-            <div class="card_img-profile ">
-              <img class="card_img-profile--style" src="./src/img/profile/profile-women1.webp" alt="" />
+
+            <div
+              class="order-1 order-md-2 col-md-4 d-flex justify-content-center align-items-center"
+            >
+              <div class="card_img-profile">
+                <img
+                  class="card_img-profile--style"
+                  src="./src/img/profile/profile-women1.webp"
+                  alt=""
+                />
+              </div>
             </div>
           </div>
         </div>
-      </div>
-      <!-- Fin Testimonio 1 -->
+        <!-- Fin Testimonio 1 -->
 
-      <!-- Testimonio 2 -->
+        <!-- Testimonio 2 -->
 
-      <div class="card my-3 align-items-start" data-aos="fade-left" data-aos-offset="150"
+        <div class="card my-3 align-items-start" data-aos="fade-left" 
+        data-aos-offset="150"
         data-aos-easing="ease-in-sine">
-        <div class="row justify-content-lg-evenly col-12 ">
-          <div class="d-flex order-2 card-body col-lg-8  justify-content-center  ">
-            <div class="row my-md-5  justify-content-center">
-              <h2 class="card-title font-principal text-center col-12">
-                Zaira Morena
-              </h2>
-              <p class="card-text text-center fst-italic col-12 fs-5">
-                "Las Vendedoras son muy profesioneles y accesibles, además se toma su trabajo en muy en serio."
-              </p>
+          <div class="row g-0">
+            <div class="order-2 card-body col-md-8">
+              <div class="col my-md-5 ms-md-3">
+                <h2 class="card-title font-principal text-center">
+                  Amelia Luca
+                </h2>
+                <p class="card-text text-center fst-italic">
+                  "Lorem ipsum dolor sit amet consectetur, adipisicing elit.
+                  Aliquid deleniti, odit sit soluta adipisci error magnam,
+                  numquam ratione similique maxime facere eveniet, laudantium
+                  illum aspernatur corrupti reiciendis neque. Magni, nesciunt."
+                </p>
+              </div>
             </div>
-          </div>
 
-          <div class="d-flex order-1 col-lg-4 justify-content-center align-items-center  ">
-            <div class="card_img-profile">
-              <img class="card_img-profile--style" src="./src/img/profile/profile-women1.webp" alt="" />
+            <div
+              class="order-1 col-md-4 d-flex justify-content-center align-items-center"
+            >
+              <div class="card_img-profile">
+                <img
+                  class="card_img-profile--style"
+                  src="./src/img/profile/profile-women1.webp"
+                  alt=""
+                />
+              </div>
             </div>
           </div>
         </div>
-      </div>
-      <!-- Fin Testimonio 2 -->
-    </section>
-  </main>
-  <!-- FOOTER -->
-  <footer class="container-fluid row mt-5">
-    <p class="col-md-4 mb-0 text-muted">Abiti Usati © 2023 Company, Inc</p>
+        <!-- Fin Testimonio 2 -->
+      </section>
+    </main>
+    <!-- FOOTER -->
+    <footer class="container-fluid row mt-5">
+      <p class="col-md-4 mb-0 text-muted ">Abiti Usati © 2023 Company, Inc</p>
 
-    <ul class="nav col-md-4 justify-content-center list-unstyled d-flex">
-      <li class="ms-3">
-        <a class="text-muted footer__icon" href="#">
-          <i class="bi bi-twitter"></i>
+      <ul class="nav col-md-4 justify-content-center list-unstyled d-flex ">
+        <li class="ms-3">
+          <a class="text-muted footer__icon" href="#"
+            >
+            <i class="bi bi-twitter"></i>
+          </a>
+        </li>
+        <li class="ms-3">
+          <a class="text-muted footer__icon" href="#"
+            >
+            <i class="bi bi-instagram"></i></a>
+        </li>
+        <li class="ms-3">
+          <a class="text-muted footer__icon" href="#"
+            >
+            <i class="bi bi-facebook"></i>
         </a>
-      </li>
-      <li class="ms-3">
-        <a class="text-muted footer__icon" href="#">
-          <i class="bi bi-instagram"></i></a>
-      </li>
-      <li class="ms-3">
-        <a class="text-muted footer__icon" href="#">
-          <i class="bi bi-facebook"></i>
-        </a>
-      </li>
-    </ul>
+        </li>
+      </ul>
 
-    <ul class="nav col-md-4 justify-content-center">
-      <li class="nav-item">
-        <a href="index.html" class="nav-link px-2 text-muted">Inicio</a>
-      </li>
+      <ul class="nav col-md-4 justify-content-center ">
+        <li class="nav-item">
+          <a href="index.html" class="nav-link px-2 text-muted">Inicio</a>
+        </li>
 
-      <li class="nav-item">
-        <a href="nosotros.html" class="nav-link px-2 text-muted">Nosotros</a>
-      </li>
-      <li class="nav-item">
-        <a href="contacto.html" class="nav-link px-2 text-muted">Contacto</a>
-      </li>
-      <li class="nav-item">
-        <a href="catalogo.html" class="nav-link px-2 text-muted">Catálogo</a>
-      </li>
-      <li class="nav-item">
-        <a href="index.html#testimonios" class="nav-link px-2 text-muted">Testimonios</a>
-      </li>
-    </ul>
+        <li class="nav-item">
+          <a href="nosotros.html" class="nav-link px-2 text-muted">Nosotros</a>
+        </li>
+        <li class="nav-item">
+          <a href="contacto.html" class="nav-link px-2 text-muted">Contacto</a>
+        </li>
+        <li class="nav-item">
+          <a href="catalogo.html" class="nav-link px-2 text-muted">Catálogo</a>
+        </li>
+        <li class="nav-item">
+          <a href="index.html#testimonios" class="nav-link px-2 text-muted"
+            >Testimonios</a
+          >
+        </li>
+      </ul>
 
-    <div class="col-12 text-center">
-      By Finochio Adrian
-      <a href="https://finochioadrian.github.io/MiPortafolio/" target="_blank" rel="noopener noreferrer">
+      <div class="col-12 text-center">
+        By Finochio Adrian
+        <a
+          href="https://finochioadrian.github.io/MiPortafolio/"
+          target="_blank"
+          rel="noopener noreferrer"
+        >
         <i class="bi bi-github"></i></a>
-    </div>
-  </footer>
+      </div>
+    </footer>
 
-  <a href="#inicio" class="btn-flotante"><i class="bi bi-arrow-up-circle-fill"></i></a>
+    <a href="#inicio" class="btn-flotante"><i class="bi bi-arrow-up-circle-fill"></i></a>
 
     <!-- SCRIPTs -->
     <script

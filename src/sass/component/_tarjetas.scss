@@ -59,13 +59,13 @@
   border: v.$color-button-hover solid 1px;
 
   &:hover {
-    cursor: default !important;
-   /*  background-color: v.$color-button-hover;
+
+    background-color: v.$color-button-hover;
     border-radius: 20px;
     border: v.$color-button-hover 1px solid;
     // font-size:large;
     font-weight: bold;
-    transition: 300ms; */
+    transition: 300ms;
 
   }
 }

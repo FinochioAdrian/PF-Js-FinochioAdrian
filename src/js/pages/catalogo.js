@@ -69,7 +69,7 @@ function renderizarCatalogo(arr) {
     btnviewProducts.forEach((productView)=> {
     if(e.target==productView){
       const productId=parseInt(e.target.id);
-      window.location.href = `./producto.html?id=${productId}`;
+      window.location.href = `/producto.html?id=${productId}`;
   
     }})
   })
