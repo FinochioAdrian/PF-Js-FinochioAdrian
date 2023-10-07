@@ -100,7 +100,7 @@ export default function gestionarProducto() {
         res = reglaValidacionesSelect(value, rules);
         return res;
       default:
-        console.log("El tipo no existe");
+        
         break;
     }
   }
@@ -176,7 +176,7 @@ export default function gestionarProducto() {
       if (nuevoProducto.imagen == "") {
         nuevoProducto.imagen = "https://via.placeholder.com/150";
       }
-      console.log(nuevoProducto);
+      
       
       try {
         const res = subirProducto(nuevoProducto);

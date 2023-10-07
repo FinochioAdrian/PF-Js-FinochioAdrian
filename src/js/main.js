@@ -13,7 +13,7 @@ const lastPathName =arrPathname[arrPathname.length-1]
 //TODO 
 
 
-console.log(lastPathName);
+console.log("V1.2");
 switch (lastPathName) {
 
     case "catalogo.html" :

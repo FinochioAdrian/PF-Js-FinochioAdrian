@@ -26,7 +26,7 @@ cartModal(catalogoArr)
 function renderizarCatalogo(arr) {
     let template = "";
     arr.forEach((obj) => {
-      console.log(obj.imagen);
+     
       template += `<div data-aos="fade-right" class="col card-scale">
           <div class="card shadow-sm">
           <h3 class="card-title font-principal text-center fw-bolder">${obj.nombre}</h3>
