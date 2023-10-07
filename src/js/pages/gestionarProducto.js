@@ -1,6 +1,8 @@
+import cartModal from "../components/cartModal.js";
 import { subirProducto } from "../components/productosdb.js";
 
 export default function gestionarProducto() {
+  cartModal()
   const formProductos = document.querySelector("#form-productos");
   const formInputs = document.querySelectorAll(".form-inputs");
   const productos = [];
